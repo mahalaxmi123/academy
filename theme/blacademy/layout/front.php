@@ -73,31 +73,33 @@ echo $OUTPUT->doctype() ?>
     <header class="navbar <?php echo $html->navbarclass ?>">
         <nav role="navigation" class="navbar-inner">
             <div class="container-fluid">
-                <div class="span3">
-                     <?php echo $html->heading; ?>
-                </div>
+                <div class="row-fluid">
+                    <div class="span3">
+                         <?php echo $html->heading; ?>
+                    </div>
 
-                <div class="span5">
-                    <a class="brand" href="<?php echo $CFG->wwwroot;?>"><?php echo
-                    format_string($SITE->shortname, true, array('context' => context_course::instance(SITEID)));
-                    ?></a>
-                    <?php echo $OUTPUT->custom_menu(); ?>
-                </div>
+                    <div class="span5">
+                        <a class="brand" href="<?php echo $CFG->wwwroot;?>"><?php echo
+                        format_string($SITE->shortname, true, array('context' => context_course::instance(SITEID)));
+                        ?></a>
+                        <?php echo $OUTPUT->custom_menu(); ?>
+                    </div>
 
 
-                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </a>
-                <div class=" span2 nav-collapse collapse">
-                    <ul class="nav pull-right">
-                        <li><?php echo $OUTPUT->page_heading_menu(); ?></li>
-                    </ul>
-                </div>
+                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </a>
+                    <div class=" span2 nav-collapse collapse">
+                        <ul class="nav pull-right">
+                            <li><?php echo $OUTPUT->page_heading_menu(); ?></li>
+                        </ul>
+                    </div>
 
-                <div class="span2">
-                        <?php echo $OUTPUT->user_menu(); ?>
+                    <div class="span2">
+                            <?php echo $OUTPUT->user_menu(); ?>
+                    </div>
                 </div>
             </div>
         </nav>

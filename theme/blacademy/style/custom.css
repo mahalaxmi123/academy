@@ -1,0 +1,182 @@
+/* Custom CSS
+-------------------------
+*/
+@import url(https://fonts.googleapis.com/css?family=Courgette);
+@import url(https://fonts.googleapis.com/css?family=Courgette|Playball);
+@import url(https://fonts.googleapis.com/css?family=Courgette|Playball|Signika);
+@import url(https://fonts.googleapis.com/css?family=Courgette|Playball|Signika|PT+Sans+Narrow);
+@import url(https://fonts.googleapis.com/css?family=Courgette|Playball|Signika|PT+Sans+Narrow|Oleo+Script);
+
+body {
+    padding-top: 0px;
+}
+
+.container-fluid {
+    padding-right: 60px;
+    padding-left: 60px;
+}
+
+div.logo {
+    background: url([[setting:logo]]) no-repeat 0 0;
+    display: block;
+    float: left;
+    height: 75px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.dir-rtl div.logo {
+    background: url([[setting:logo]]) no-repeat 100% 0;
+    display: block;
+    float: right;
+}
+
+.navbar { margin-bottom: 0px; }
+
+
+.navbar { 
+    position: absolute;
+    width: 100%; 
+    z-index: 4030;
+}
+
+.navbar .nav {
+    margin-top: 20px;
+}
+
+.navbar .nav>li {
+    padding: 0px 14px;
+    font-size: 20px;
+}
+
+.navbar .nav>li>a {
+    float: none;
+    color: #46a8bf;
+    text-decoration: none;
+    text-shadow: none;
+}
+
+
+.navbar-inner .span3 .usermenu {
+    background-color: #fff !important;
+}
+
+.navbar-inner{
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  background: none;
+}
+
+#backgroundimg {width:100%;}
+
+#Infoblock {
+    background-color: #444444;
+}
+
+#Infoblock .span9 h2{
+    padding:20px;
+    font-size: 48px;
+    color: #fefefe;
+    font-family: sans-serif;
+}
+
+
+#Infoblock .span9 .infocontent{
+    margin-bottom: 20px;
+    padding:10px;
+    color: #fefefe;
+    font-size: 20px;
+    font-family: serif;
+
+}
+
+body.pagelayout-frontpage #page-header { 
+  background-image: url([[setting:headerimg]]);
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-color: #ccc;
+  background-size: 100%;
+  min-height: 700px;
+  padding-top: 60px;
+}
+
+#page .marketingbox {
+ background-image: url([[setting:backgroundimg]]);
+ background-position: left top;
+ background-repeat: no-repeat;
+ background-size: 100%;
+ height: 750px;
+}
+
+
+
+.marketingbox .marketing-bg-content{
+    padding: 30px;
+    text-align: center;
+} 
+
+
+.marketingbox .marketing-bg-content h1{
+    font-size: 40px;
+    color: #8fcbb6;
+    font-weight: 500;
+    font-family: sans-serif;
+    margin: 10px;
+}
+
+.marketingbox .marketing-bg-content p {
+    margin: 30px;
+    color: #dff8ef;
+    font-size: 30px;
+    font-family: playball;
+    font-weight: initial;
+        
+}
+
+#page .marketingbox .marketing-innerbox .span3 {
+    background-color: #4e927a; 
+    box-shadow: 0 0 5px #97beb0;
+    padding: 4em 2em;
+    text-align: center;
+    
+}
+
+#page .marketingbox .marketing-innerbox .span3 h1{
+    font-family: sans-serif;
+    color: #e2f7f0;
+    font-weight: 100;
+    padding: 10px;
+}
+
+#page .marketingbox .marketing-innerbox .span3 p {
+    color: #e2f7ef;
+    font-family: serif;
+    font-size: 22px;
+    line-height: normal;
+}
+
+#page .marketingbox .marketing-innerbox .span3 button {
+    padding: 14px 43px;
+    background-color: #4E927A;
+    background-image: linear-gradient(to bottom, #4E927A, #4E927A);
+    border: 1px solid #97beb0;
+    border-radius: 50px;
+    font-size: 28px;
+    text-shadow: none;
+    color: #d2f5fd;
+    font-weight: 100;
+    font-family: sans-serif;
+    margin-top: 30px;
+}
+
+#page-wrapper{
+    margin-top: 30px;
+}
+
+/*
+ Custom CSS Settings
+*/
+-------------------------
+[[setting:customcss]]

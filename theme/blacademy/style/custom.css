@@ -18,12 +18,12 @@ body {
 
 div.logo {
     background: url([[setting:logo]]) no-repeat 0 0;
-    display: block;
+    display: inline;
     float: left;
     height: 75px;
-    margin: 0;
+    margin: 16px;
     padding: 0;
-    width: 100%;
+    width: 20%;
 }
 
 .dir-rtl div.logo {
@@ -42,19 +42,19 @@ div.logo {
 }
 
 .navbar .nav {
-    margin-top: 20px;
+    margin-top: 30px;
+    float:none;
 }
 
-.navbar .nav>li {
-    padding: 0px 14px;
-    font-size: 20px;
+.navbar .brand,.navbar .nav>li,.navbar .nav>li>a {
+    font-size:18px;
+    text-decoration: none;
+    text-shadow: none;
+    color: #46a8bf;
 }
 
 .navbar .nav>li>a {
     float: none;
-    color: #46a8bf;
-    text-decoration: none;
-    text-shadow: none;
 }
 
 
@@ -69,7 +69,72 @@ div.logo {
   background: none;
 }
 
+.notloggedin #signbuttom {
+    float: right;
+    float: right;
+    background-color: #46a8bf;
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-family: sans-serif;
+}
+
+.notloggedin #signbuttom  a {
+    color:#ffffff;
+    text-decoration: none;
+}
+
+.notloggedin #signbuttom  a:hover {
+    color:#BFEAF4;
+}
+
+.jsenabled .moodle-actionmenu[data-enhance] .toggle-display.textmenu{
+    color:#46a8bf;
+    font-size: 16px;
+}
+
+.jsenabled .moodle-actionmenu[data-enhance] .toggle-display.textmenu .caret {
+    margin-top: 8px;
+    margin-left: 2px;
+    border-top-color:#46a8bf;
+}
+
+.usermenu .moodle-actionmenu .toggle-display .userbutton .avatars img {
+    border-radius: 18px;
+}
+
+.caret {
+    border-top: 6px solid #46A8BF;
+}
+
+.jsenabled .usermenu .moodle-actionmenu.show{
+     background-color: transparent;
+}
+
+.jsenabled .usermenu .moodle-actionmenu.show .menu{
+    -webkit-box-shadow: none;
+   box-shadow:none; 
+}
+
+.moodle-actionmenu[data-enhanced].show .menu {
+   background-color: transparent;
+   -webkit-box-shadow: none;
+   box-shadow:none;
+}
+
+.jsenabled .usermenu .moodle-actionmenu>.menu .filler, .jsenabled .usermenu .moodle-actionmenu>.menu .filler {
+    background-color: #345F58l;
+    border-bottom: none;
+    
+}
+
+
+.jsenabled .usermenu .moodle-actionmenu>.menu .filler
 #backgroundimg {width:100%;}
+
+.block{
+ background-color: #fdfdfd;   
+}
 
 #Infoblock {
     background-color: #444444;
@@ -102,7 +167,7 @@ body.pagelayout-frontpage #page-header {
   padding-top: 60px;
 }
 
-#page .marketingbox {
+ .pagelayout-frontpage .marketingbox {
  background-image: url([[setting:backgroundimg]]);
  background-position: left top;
  background-repeat: no-repeat;
@@ -135,7 +200,7 @@ body.pagelayout-frontpage #page-header {
         
 }
 
-#page .marketingbox .marketing-innerbox .span3 {
+ .marketingbox .marketing-innerbox .span3 {
     background-color: #4e927a; 
     box-shadow: 0 0 5px #97beb0;
     padding: 4em 2em;
@@ -143,21 +208,21 @@ body.pagelayout-frontpage #page-header {
     
 }
 
-#page .marketingbox .marketing-innerbox .span3 h1{
+ .marketingbox .marketing-innerbox .span3 h1{
     font-family: sans-serif;
     color: #e2f7f0;
     font-weight: 100;
     padding: 10px;
 }
 
-#page .marketingbox .marketing-innerbox .span3 p {
+ .marketingbox .marketing-innerbox .span3 p {
     color: #e2f7ef;
     font-family: serif;
     font-size: 22px;
     line-height: normal;
 }
 
-#page .marketingbox .marketing-innerbox .span3 button {
+ .marketingbox .marketing-innerbox .span3 button {
     padding: 14px 43px;
     background-color: #4E927A;
     background-image: linear-gradient(to bottom, #4E927A, #4E927A);
@@ -172,6 +237,10 @@ body.pagelayout-frontpage #page-header {
 }
 
 #page-wrapper{
+    background-color: #e8e8e8;
+}
+
+#page-content {
     margin-top: 30px;
 }
 

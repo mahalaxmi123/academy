@@ -126,173 +126,175 @@ if (!empty($PAGE->theme->settings->marketing4url)) {
 
 <div class="marketingbox">
     <div class="container-fluid">
-        <div class="marketing-bg-content">
-                 <?php if ($backgroundheading) { ?>
-                   <h1><?php echo $backgroundheading?></h1>
-                     <?php 
-                      } else {
-                      ?>
+        <div class="row-fluid">
+            <div class="marketing-bg-content">
+                     <?php if ($backgroundheading) { ?>
+                       <h1><?php echo $backgroundheading?></h1>
+                         <?php 
+                          } else {
+                          ?>
+                          <?php 
+                          }
+                          ?>
+                          <?php if ($backgroundcontent) { ?>
+                          <p><?php echo $backgroundcontent?></p>
+                          <?php 
+                          } else {
+                          ?>
+                          <?php 
+                          }
+                          ?>
+            </div>
+            <div class="marketing-innerbox">
+                <div class="row-fluid">
+                  <div class="span3">
+                   <img src="<?php echo $marketing1icon ?>" />        
+                   <?php if ($marketing1heading) { ?>
+                   <h1><?php echo $marketing1heading?></h1>
+                   <?php 
+                   } else {
+                   ?>
+                   <?php 
+                   }
+                   ?>
+                   <?php if ($marketing1subheading) { ?>
+                   <h4><?php echo $marketing1subheading?></h4>
+                   <?php
+                   } else {
+                   ?>
                       <?php 
-                      }
-                      ?>
-                      <?php if ($backgroundcontent) { ?>
-                      <p><?php echo $backgroundcontent?></p>
-                      <?php 
-                      } else {
-                      ?>
-                      <?php 
-                      }
-                      ?>
-        </div>
-        <div class="marketing-innerbox">
-            <div class="row-fluid">
-              <div class="span3">
-               <img src="<?php echo $marketing1icon ?>" />        
-               <?php if ($marketing1heading) { ?>
-               <h1><?php echo $marketing1heading?></h1>
-               <?php 
-               } else {
-               ?>
-               <?php 
-               }
-               ?>
-               <?php if ($marketing1subheading) { ?>
-               <h4><?php echo $marketing1subheading?></h4>
-               <?php
-               } else {
-               ?>
-                  <?php 
-               }
-               ?>       
-               <?php if ($marketing1content) { ?>
-               <p><?php echo $marketing1content?></p>
-               <?php
-               } else {
-               ?>
-               <?php 
-               }
-               ?>
-               <?php if ($marketing1url) { ?>
-               <a href="<?php echo $marketing1url?>"><button>More</button></a>
-               <?php 
-               } else {
-               ?>
-               <?php 
-               }
-               ?>
-              </div>
+                   }
+                   ?>       
+                   <?php if ($marketing1content) { ?>
+                   <p><?php echo $marketing1content?></p>
+                   <?php
+                   } else {
+                   ?>
+                   <?php 
+                   }
+                   ?>
+                   <?php if ($marketing1url) { ?>
+                   <a href="<?php echo $marketing1url?>"><button>More</button></a>
+                   <?php 
+                   } else {
+                   ?>
+                   <?php 
+                   }
+                   ?>
+                  </div>
 
-              <div class="span3">
-               <img src="<?php echo $marketing2icon ?>" />
-               <?php if ($marketing2heading) { ?>
-               <h1><?php echo $marketing2heading?></h1>
-               <?php 
-               } else {
-               ?>
-               <?php 
-               }
-               ?>
-               <?php if ($marketing2subheading) { ?>
-               <h4><?php echo $marketing2subheading?></h4>
-               <?php 
-               } else {
-               ?>
-               <?php 
-               }
-               ?>
+                  <div class="span3">
+                   <img src="<?php echo $marketing2icon ?>" />
+                   <?php if ($marketing2heading) { ?>
+                   <h1><?php echo $marketing2heading?></h1>
+                   <?php 
+                   } else {
+                   ?>
+                   <?php 
+                   }
+                   ?>
+                   <?php if ($marketing2subheading) { ?>
+                   <h4><?php echo $marketing2subheading?></h4>
+                   <?php 
+                   } else {
+                   ?>
+                   <?php 
+                   }
+                   ?>
 
-               <?php if ($marketing2content) { ?>
-               <p><?php echo $marketing2content?></p>
-               <?php
-               } else {
-               ?>
-               <?php 
-               }
-               ?>
-               <?php if ($marketing2url) { ?>
-               <a href="<?php echo $marketing2url?>"><button>More</button></a>
-               <?php 
-               } else {
-               ?>
-               <?php 
-               }
-               ?>
-               </div>
-              <div class="span3">
-               <img src="<?php echo $marketing3icon ?>" />
-               <?php if ($marketing3heading) { ?>
-               <h1><?php echo $marketing3heading?></h1>
-               <?php 
-               } else {
-               ?>
-               <?php 
-               }
-               ?>
-               <?php if ($marketing3subheading) { ?>
-               <h4><?php echo $marketing3subheading?></h4>
-               <?php 
-               } else {
-               ?>
-               <?php 
-               }
-               ?>
-               <?php if ($marketing3content) { ?>
-               <p><?php echo $marketing3content?></p>
-               <?php 
-               } else {
-               ?>
-               <?php 
-               }
-               ?>
-               <?php if ($marketing3url) { ?>
-               <a href="<?php echo $marketing3url?>"><button>More</button></a>
-               <?php 
-               } else {
-               ?>
-               <?php 
-               }
-               ?>
-              </div>
+                   <?php if ($marketing2content) { ?>
+                   <p><?php echo $marketing2content?></p>
+                   <?php
+                   } else {
+                   ?>
+                   <?php 
+                   }
+                   ?>
+                   <?php if ($marketing2url) { ?>
+                   <a href="<?php echo $marketing2url?>"><button>More</button></a>
+                   <?php 
+                   } else {
+                   ?>
+                   <?php 
+                   }
+                   ?>
+                   </div>
+                  <div class="span3">
+                   <img src="<?php echo $marketing3icon ?>" />
+                   <?php if ($marketing3heading) { ?>
+                   <h1><?php echo $marketing3heading?></h1>
+                   <?php 
+                   } else {
+                   ?>
+                   <?php 
+                   }
+                   ?>
+                   <?php if ($marketing3subheading) { ?>
+                   <h4><?php echo $marketing3subheading?></h4>
+                   <?php 
+                   } else {
+                   ?>
+                   <?php 
+                   }
+                   ?>
+                   <?php if ($marketing3content) { ?>
+                   <p><?php echo $marketing3content?></p>
+                   <?php 
+                   } else {
+                   ?>
+                   <?php 
+                   }
+                   ?>
+                   <?php if ($marketing3url) { ?>
+                   <a href="<?php echo $marketing3url?>"><button>More</button></a>
+                   <?php 
+                   } else {
+                   ?>
+                   <?php 
+                   }
+                   ?>
+                  </div>
 
-              <div class="span3">
-               <img src="<?php echo $marketing4icon ?>" />
-               <?php if ($marketing4heading) { ?>
-               <h1><?php echo $marketing4heading?></h1>
-               <?php 
-               } else {
-               ?>
-               <?php 
-               }
-               ?>
-               <?php if ($marketing4subheading) { ?>
-               <h4><?php echo $marketing4subheading?></h4>
-               <?php 
-               } else {
-               ?>
-               <?php 
-               }
-               ?>       
-               <?php if ($marketing4content) { ?>
-               <p><?php echo $marketing4content?></p>
-               <?php 
-               } else {
-               ?>
-               <?php 
-               }
-               ?>        
-               <?php if ($marketing4url) { ?>
-               <a href="<?php echo $marketing4url?>"><button>More</button></a>
-               <?php 
-               } else {
-               ?>
-               <?php 
-               }
-               ?>        
-              </div>
-            <div class="clearfix"></div>
-            </div> 
-        </div>    
+                  <div class="span3">
+                   <img src="<?php echo $marketing4icon ?>" />
+                   <?php if ($marketing4heading) { ?>
+                   <h1><?php echo $marketing4heading?></h1>
+                   <?php 
+                   } else {
+                   ?>
+                   <?php 
+                   }
+                   ?>
+                   <?php if ($marketing4subheading) { ?>
+                   <h4><?php echo $marketing4subheading?></h4>
+                   <?php 
+                   } else {
+                   ?>
+                   <?php 
+                   }
+                   ?>       
+                   <?php if ($marketing4content) { ?>
+                   <p><?php echo $marketing4content?></p>
+                   <?php 
+                   } else {
+                   ?>
+                   <?php 
+                   }
+                   ?>        
+                   <?php if ($marketing4url) { ?>
+                   <a href="<?php echo $marketing4url?>"><button>More</button></a>
+                   <?php 
+                   } else {
+                   ?>
+                   <?php 
+                   }
+                   ?>        
+                  </div>
+                <div class="clearfix"></div>
+                </div> 
+            </div>    
     </div>
+   </div>
 </div>
 <?php 
 } else {

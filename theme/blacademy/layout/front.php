@@ -166,18 +166,20 @@ echo $OUTPUT->doctype() ?>
    
     
     
-    <div id="page-wrapper" class="container-fluid">
-    <div id="page-content" class="row-fluid">
-        <section id="region-main" class="<?php echo $regionmain; ?>">
-            <?php
-            echo $OUTPUT->course_content_header();
-            echo $OUTPUT->main_content();
-            echo $OUTPUT->course_content_footer();
-            ?>
-        </section>
-        <?php echo $OUTPUT->blocks('side-pre', $sidepre);
-        ?>
-    </div>  
+    <div id="page-wrapper"> 
+        <div class="container-fluid">
+            <div id="page-content" class="row-fluid">
+                <section id="region-main" class="<?php echo $regionmain; ?>">
+                    <?php
+                    echo $OUTPUT->course_content_header();
+                    echo $OUTPUT->main_content();
+                    echo $OUTPUT->course_content_footer();
+                    ?>
+                </section>
+                <?php echo $OUTPUT->blocks('side-pre', $sidepre);
+                ?>
+            </div>
+       </div>
     </div>
 
 <footer id="footer">

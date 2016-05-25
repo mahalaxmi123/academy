@@ -132,9 +132,6 @@ div.logo {
 .jsenabled .usermenu .moodle-actionmenu>.menu .filler
 #backgroundimg {width:100%;}
 
-.block{
- background-color: #fdfdfd;   
-}
 
 #Infoblock {
     background-color: #444444;
@@ -243,6 +240,32 @@ body.pagelayout-frontpage #page-header {
 #page-content {
     margin-top: 30px;
 }
+
+.block{
+    background-color: #EEEEEE;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 0px;
+    border: 1px solid #529eaf;
+}
+
+.block .header h2 {
+    display: block;
+    font-weight: 100;
+    padding: 10px 15px;
+    font-size: 11px;
+    line-height: 20px;
+    color: #fff;
+    text-shadow: none; 
+    text-transform: uppercase;
+    font-size: 18px;
+    margin: 0;
+    background-color: #378fa4;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.block .content { padding: 16px 14px;}
 
 /*
  Custom CSS Settings

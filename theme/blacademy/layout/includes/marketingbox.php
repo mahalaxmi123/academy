@@ -124,7 +124,7 @@ if (!empty($PAGE->theme->settings->marketing4url)) {
 
 <?php  if ($displaymarketingbox) { ?>
 
-<div class="marketingbox">
+<div class="marketingbox row-fluid">
     <div class="container-fluid">
         <div class="row-fluid">
             <div class="marketing-bg-content">

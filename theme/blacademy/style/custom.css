@@ -21,7 +21,7 @@ div.logo {
     display: inline;
     float: left;
     height: 75px;
-    margin: 16px;
+    margin: 10px;
     padding: 0;
     width: 20%;
 }
@@ -42,7 +42,7 @@ div.logo {
 }
 
 .navbar .nav {
-    margin-top: 30px;
+    margin: 30px;
     float:none;
 }
 
@@ -133,6 +133,38 @@ div.logo {
 #backgroundimg {width:100%;}
 
 
+body.pagelayout-frontpage #page-header { 
+  background-image: url([[setting:headerimg]]);
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-color: #ccc;
+  background-size: 100%;
+  min-height: 700px;
+  padding-top: 60px;
+}
+
+body.pagelayout-frontpage #page-header .container-fluid{
+	margin-top: 12%;
+    text-align: center;
+	}
+	
+body.pagelayout-frontpage #page-header h1{
+	font-size: 58px;
+    font-family: cursive;
+    padding: 30px;
+    color: #fefefe;
+	}
+
+body.pagelayout-frontpage #page-header p{
+	font-size: 26px;
+    color: #fefefe;
+    padding: 10px;
+    font-family: Courgette;
+    width: 80%;
+    margin: auto;
+    line-height: normal;
+	}
+
 #Infoblock {
     background-color: #444444;
 }
@@ -152,16 +184,6 @@ div.logo {
     font-size: 20px;
     font-family: serif;
 
-}
-
-body.pagelayout-frontpage #page-header { 
-  background-image: url([[setting:headerimg]]);
-  background-position: left top;
-  background-repeat: no-repeat;
-  background-color: #ccc;
-  background-size: 100%;
-  min-height: 700px;
-  padding-top: 60px;
 }
 
  .pagelayout-frontpage .marketingbox {
@@ -266,6 +288,28 @@ body.pagelayout-frontpage #page-header {
 }
 
 .block .content { padding: 16px 14px;}
+
+
+/* Footer Start */
+.footer-main { background-color: #3D3D3D; color: #fff; padding: 26px 0; font-size: 12px; }
+//.socialnetworks, .footerlinks { display: inline-block; vertical-align: middle; }
+//.copyright-box { text-align: left; margin-top: 5px; }
+.footer-nav h1, .contact-info h1,.footer-desc h1{ color:#DAD9D9; padding: 10px; }
+#footer .footer-desc p, #footer .contact-info p { font-size: 14px; color: #dcdcdc; padding: 10px;}
+#footer .footer-nav ul { margin: 0px; }
+#footer .footer-nav ul li { font-size: 14px; list-style: none; padding-left: 10px; }
+.footerlinks a { margin-right: 10px; }
+#footer a { color: #dcdcdc; }
+#footer a:hover { text-decoration: none; color: #c52c2e; }
+#footer .row-fluid [class*="span"] { min-height: auto; }
+#footer .footer-foot p { margin: 0; font-size: 16px; color: #dcdcdc;;}
+.fa {font-size: 24px; padding-right: 10px; margin-top: 8px; }
+.footer-foot { background-color:#2b2b2b; padding: 10px; text-align: center;
+}
+#page-footer { border: none; padding: 0; margin: 0; }
+#page-footer .validators, #page-footer .purgecaches, #page-footer .performanceinfo { margin-bottom: 65px; }
+#page-footer .purgecaches { margin-bottom: 0px; }
+/* End */
 
 /*
  Custom CSS Settings

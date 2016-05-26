@@ -241,6 +241,80 @@ function theme_blacademy_get_setting($setting, $format = false) {
     }
 }
 
+
+
+/**
+ * All theme functions should start with theme_blacademy_
+ * @deprecated since 2.5.1
+ */
+function theme_blacademy_course_trim_char($str, $n = 500, $endchar = '&#8230;') {
+    if (strlen($str) < $n) {
+        return $str;
+    }
+
+    $str = preg_replace("/\s+/", ' ', str_replace(array("\r\n", "\r", "\n"), ' ', $str));
+    if (strlen($str) <= $n) {
+        return $str;
+    }
+
+    $out = "";
+    $small = substr($str, 0, $n);
+    $out = $small.$endchar;
+    return $out;
+}
+
+function theme_blacademy_lang($key = '') {
+    $pos = strpos($key, 'lang:');
+    if ($pos !== false) {
+        list($l, $k) = explode(":", $key);
+        $v = get_string($k, 'theme_blacademy');
+        return $v;
+    } else {
+        return $key;
+    }
+
+}
+
+
+/**
+ * Display Footer Block Custom Links
+ * @param string $menu_name Footer block link name.
+ * @return string The Footer links are return.
+ */
+
+function theme_blacademy_generate_links($menuname = '') {
+    global $CFG, $PAGE;
+    $htmlstr = '';
+    $menustr = theme_blacademy_get_setting($menuname);
+    if(!empty($menustr) && $menustr != ''){
+        $menusettings = explode("\n", $menustr);
+        //print_r($menusettings);exit;
+         foreach ($menusettings as $menukey => $menuval) {
+             $expset = explode("|", $menuval);
+             list($ltxt, $lurl) = $expset;
+             $ltxt = trim($ltxt);
+
+             $ltxt = theme_blacademy_lang($ltxt);
+             $lurl = trim($lurl);
+             if (empty($ltxt)) {
+                 continue;
+             }
+             if (empty($lurl)) {
+                 $lurl = 'javascript:void(0);';
+             }
+
+             $pos = strpos($lurl, 'http');
+             if ($pos === false) {
+                 $lurl = new moodle_url($lurl);
+             }
+             $htmlstr .= '<li><a href="'.$lurl.'">'.$ltxt.'</a></li>'."\n";
+         }
+
+         return $htmlstr;
+    }
+    
+    
+}
 /**
  * All theme functions should start with theme_blacademy_
  * @deprecated since 2.5.1

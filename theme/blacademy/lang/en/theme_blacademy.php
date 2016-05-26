@@ -140,25 +140,42 @@ $string['marketing4contentdesc'] = 'Enter Marketing4 Content Text';
 $string['marketing4url'] = 'Marketing1 URL';
 $string['marketing4urldesc'] = 'Enter Marketing1 URL';
 
+/*Footer Setting*/
+$string['blacademy'] = 'Galaxy';
+$string['footersettings'] = 'Footer Setting';
+$string['footerheadingsub'] = 'Set the content that should appear in the footer.';
+$string['footerdesc'] = 'Control the content that appears in the 4 footer sections of the page.';
 
-/* Social Networks */
-$string['socialsettings'] = 'Social Icon Settings';
-$string['socialheading'] = 'Social networking';
-$string['socialheadingsub'] = 'Engage your users with social networking';
-$string['socialdesc'] = 'Provide direct links to the core social networks that promote your brand.  These will appear in the header of every page.';
-$string['socialnetworks'] = 'Social Networks';
-$string['facebook'] = 'Facebook URL';
-$string['facebookdesc'] = 'Enter the URL of your Facebook page. (i.e https://www.facebook.com/mycollege)';
-$string['twitter'] = 'Twitter URL';
-$string['twitterdesc'] = 'Enter the URL of your Twitter feed. (i.e https://www.twitter.com/mycollege)';
-$string['linkedin'] = 'LinkedIn URL';
-$string['linkedindesc'] = 'Enter the URL of your LinkedIn profile. (i.e https://www.linkedin.com/company/mycollege)';
-$string['youtube'] = 'YouTube URL';
-$string['youtubedesc'] = 'Enter the URL of your YouTube channel. (i.e https://www.youtube.com/user/mycollege)';
-$string['flickr'] = 'Flickr URL';
-$string['flickrdesc'] = 'Enter the URL of your Flickr page. (i.e http://www.flickr.com/photos/mycollege)';
-$string['pinterest'] = 'Pinterest URL';
-$string['pinterestdesc'] = 'Enter the URL of your Pinterest page. (i.e http://pinterest.com/mycollege/mypinboard)';
+$string['mapheader'] = 'Footer Section map  Title';
+$string['mapheaderdesc'] = 'Add a title for footer section map';
 
+
+$string['footer1header'] = 'Footer Section 1 Title';
+$string['footer1desc'] = 'Add a title for footer section 1';
+
+$string['footerblock1link'] = 'Footer Section 1 Content';
+$string['footerblock1linkdesc'] = 'Put your link with title, eg:- facebook|http://www.facebook.com';
+$string['footerblock1link_default'] = 'Galaxy|http://www.example.com/blacademy.php';
+
+$string['footer2header'] = 'Footer Section 2 Title';
+$string['footer2headerdesc'] = 'Add a title for footer section 2';
+
+$string['footnote'] = 'Footnote';
+$string['footnotedefault'] = '<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and tronic typesetting, sheets taining Lorem Ipsum passages.</p>';
+$string['footnotedesc'] = 'Whatever you add to this textarea will be displayed in the footer throughout your Moodle site.';
+
+$string['footer3header'] = 'Footer Section 3 Title';
+$string['footer3headerdesc'] = 'Add a title for footer section 3';
+
+$string['address'] = 'Address';
+$string['defaultaddress'] = '308 Negra Narrow Lane, Albeeze, New york, 87104';
+
+$string['emailid'] = 'Email';
+$string['defaultemailid'] = 'info@example.com';
+$string['phoneno'] = 'Phone No';
+$string['defaultphoneno'] = '(000) 123-456';
+
+$string['copyright_footer'] = 'Copyright';
+$string['copyright_default'] = 'Copyright &copy; 2016- All Right Reserved. ';
 
 

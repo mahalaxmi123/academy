@@ -369,64 +369,95 @@ $ADMIN->add('theme_blacademy', $temp);
 
 
 
-/* Social Network Settings */
-$temp = new admin_settingpage('theme_blacademy_social', get_string('socialsettings', 'theme_blacademy'));
-    $temp->add(new admin_setting_heading('theme_blacademy_social', get_string('socialheadingsub', 'theme_blacademy'),
-        format_text(get_string('socialdesc', 'theme_blacademy'), FORMAT_MARKDOWN)));
-
-    // Facebook url setting.
-    $name = 'theme_blacademy/facebook';
-    $title = get_string('facebook', 'theme_blacademy');
-    $description = get_string('facebookdesc', 'theme_blacademy');
+$temp = new admin_settingpage('theme_blacademy_footer', get_string('footersettings', 'theme_blacademy'));
+    $temp->add(new admin_setting_heading('theme_blacademy_footer', get_string('footerheadingsub', 'theme_blacademy'),
+        format_text(get_string('footerdesc', 'theme_blacademy'), FORMAT_MARKDOWN)));
+    /* Footer Content */
+	
+	
+	$name = 'theme_blacademy/mapheader';
+    $title = get_string('mapheader', 'theme_blacademy');
+    $description = get_string('mapheader', 'theme_blacademy');
     $default = '';
     $setting = new admin_setting_configtext($name, $title, $description, $default);
-    $setting->set_updatedcallback('theme_reset_all_caches');
     $temp->add($setting);
-
-    // Flickr url setting.
-    $name = 'theme_blacademy/flickr';
-    $title = get_string('flickr', 'theme_blacademy');
-    $description = get_string('flickrdesc', 'theme_blacademy');
+    
+    $name = 'theme_blacademy/footer1header';
+    $title = get_string('footer1header', 'theme_blacademy');
+    $description = get_string('footer1desc', 'theme_blacademy');
     $default = '';
     $setting = new admin_setting_configtext($name, $title, $description, $default);
-    $setting->set_updatedcallback('theme_reset_all_caches');
-    $temp->add($setting);
-
-    // Twitter url setting.
-    $name = 'theme_blacademy/twitter';
-    $title = get_string('twitter', 'theme_blacademy');
-    $description = get_string('twitterdesc', 'theme_blacademy');
-    $default = '';
-    $setting = new admin_setting_configtext($name, $title, $description, $default);
-    $setting->set_updatedcallback('theme_reset_all_caches');
-    $temp->add($setting);
-
-    // LinkedIn url setting.
-    $name = 'theme_blacademy/linkedin';
-    $title = get_string('linkedin', 'theme_blacademy');
-    $description = get_string('linkedindesc', 'theme_blacademy');
-    $default = '';
-    $setting = new admin_setting_configtext($name, $title, $description, $default);
-    $setting->set_updatedcallback('theme_reset_all_caches');
-    $temp->add($setting);
-
-    // Pinterest url setting.
-    $name = 'theme_blacademy/pinterest';
-    $title = get_string('pinterest', 'theme_blacademy');
-    $description = get_string('pinterestdesc', 'theme_blacademy');
-    $default = '';
-    $setting = new admin_setting_configtext($name, $title, $description, $default);
-    $setting->set_updatedcallback('theme_reset_all_caches');
-    $temp->add($setting);
-
-    // YouTube url setting.
-    $name = 'theme_blacademy/youtube';
-    $title = get_string('youtube', 'theme_blacademy');
-    $description = get_string('youtubedesc', 'theme_blacademy');
-    $default = '';
-    $setting = new admin_setting_configtext($name, $title, $description, $default);
-    $setting->set_updatedcallback('theme_reset_all_caches');
     $temp->add($setting);
 	
+    $name = 'theme_blacademy/footerblock1link';
+    $title = get_string('footerblock1link', 'theme_blacademy');
+    $description = get_string('footerblock1linkdesc', 'theme_blacademy');
+    //$default = get_string('footerblock1link_default', 'theme_blacademy');
+    $default = '';
+    $setting = new admin_setting_configtextarea($name, $title, $description, $default);
+    $setting->set_updatedcallback('theme_reset_all_caches');
+    $temp->add($setting);
     
+//    $name = 'theme_blacademy/footerblock1link';
+//    $title = get_string('footerblock1link', 'theme_blacademy');
+//    $description = get_string('footerblock1linkdesc','theme_blacademy');
+//    $default = get_string('footerblock1link', 'theme_blacademy');
+//    $setting = new admin_setting_confightmleditor($name, $title, $description, $default);
+//    $setting->set_updatedcallback('theme_reset_all_caches');
+//    $temp->add($setting);
+    
+        /* More Info*/
+    $name = 'theme_blacademy/footer2header';
+    $title = get_string('footer2header', 'theme_blacademy');
+    $description = get_string('footer2headerdesc','theme_blacademy');
+    $default = '';
+    $setting = new admin_setting_configtext($name, $title, $description, $default);
+    $temp->add($setting);
+    
+    $name = 'theme_blacademy/footnote';
+    $title = get_string('footnote', 'theme_blacademy');
+    $description = get_string('footnotedesc', 'theme_blacademy');
+    $default = '';
+    $setting = new admin_setting_confightmleditor($name, $title, $description, $default);
+    $setting->set_updatedcallback('theme_reset_all_caches');
+    $temp->add($setting); 
+    
+    
+    $name = 'theme_blacademy/footer3header';
+    $title = get_string('footer3header', 'theme_blacademy');
+    $description = get_string('footer3headerdesc','theme_blacademy');
+    $default = '';
+    $setting = new admin_setting_configtext($name, $title, $description, $default);
+    $temp->add($setting);
+    
+    /* Address , Email , Phone No */		
+    $name = 'theme_blacademy/address';
+    $title = get_string('address', 'theme_blacademy');
+    $description = '';
+    $default = get_string('defaultaddress','theme_blacademy');
+    $setting = new admin_setting_configtext($name, $title, $description, $default);
+    $temp->add($setting);
+				
+				
+    $name = 'theme_blacademy/emailid';
+    $title = get_string('emailid', 'theme_blacademy');
+    $description = '';
+    $default = get_string('defaultemailid','theme_blacademy');
+    $setting = new admin_setting_configtext($name, $title, $description, $default);
+    $temp->add($setting);
+				
+    $name = 'theme_blacademy/phoneno';
+    $title = get_string('phoneno', 'theme_blacademy');
+    $description = '';
+    $default = get_string('defaultphoneno','theme_blacademy');
+    $setting = new admin_setting_configtext($name, $title, $description, $default);
+    $temp->add($setting);
+    
+   $name = 'theme_blacademy/copyright_footer';
+    $title = get_string('copyright_footer', 'theme_blacademy');
+    $description = '';
+    $default = get_string('copyright_default','theme_blacademy');
+    $setting = new admin_setting_configtext($name, $title, $description, $default);
+    $temp->add($setting);
+   
     $ADMIN->add('theme_blacademy', $temp);

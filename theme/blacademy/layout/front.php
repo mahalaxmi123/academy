@@ -101,13 +101,13 @@ echo $OUTPUT->doctype() ?>
             </div>
         </div>
     </nav>
-</header
+</header>
   
 <div id="page">
     <div id="page-header">
             <div class="container-fluid">
              <?php if ($bannerheading) { ?>
-               <h1 class="new"><?php echo $bannerheading?></h1>
+               <h1 class="bannerheader"><?php echo $bannerheading?></h1>
                  <?php 
                   } else {
                   ?>
@@ -182,27 +182,9 @@ echo $OUTPUT->doctype() ?>
        </div>
     </div>
 
-<footer id="footer">
-    <div class="footer-in">
-        <div class="container-fluid">
-            <div id="course-footer"><?php echo $OUTPUT->course_footer(); ?></div>
-            <div class="row-fluid">
-                <div class="span6 copyright-box"><?php echo $html->footnote; ?></div>
-                <div class="span6 footerlinks-box">
-                    <!-- Start Social Icons -->
-                    <?php require_once(dirname(__FILE__).'/includes/socialicons.php'); ?>
-                    <!-- End -->
-                </div>
-            </div>
-        </div>
-    </div>
-</footer>
-
-<?php if (!empty($OUTPUT->standard_footer_html())) { ?>
-    <footer id="page-footer"> <?php echo $OUTPUT->standard_footer_html(); ?></footer>
-<?php } ?>
-
-<?php echo $OUTPUT->standard_end_of_body_html() ?>
+<!-- Start footer -->
+<?php require_once(dirname(__FILE__).'/includes/footer.php'); ?>
+<!-- End -->
 </div>
 </body>
 </html>

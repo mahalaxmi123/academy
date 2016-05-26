@@ -20,7 +20,7 @@ div.logo {
     background: url([[setting:logo]]) no-repeat 0 0;
     display: inline;
     float: left;
-    height: 75px;
+    height: 50px;
     margin: 10px;
     padding: 0;
     width: 20%;
@@ -41,8 +41,14 @@ div.logo {
     z-index: 4030;
 }
 
+.navbar:hover {
+	background-color: #fefefe;
+	}
+
+
+
 .navbar .nav {
-    margin: 30px;
+    margin: 20px;
     float:none;
 }
 
@@ -122,6 +128,10 @@ div.logo {
    box-shadow:none;
 }
 
+.moodle-actionmenu[data-enhanced].show .menu a {
+	color: #46A8BF;	
+	}
+
 .jsenabled .usermenu .moodle-actionmenu>.menu .filler, .jsenabled .usermenu .moodle-actionmenu>.menu .filler {
     background-color: #345F58l;
     border-bottom: none;
@@ -131,6 +141,7 @@ div.logo {
 
 .jsenabled .usermenu .moodle-actionmenu>.menu .filler
 #backgroundimg {width:100%;}
+
 
 
 body.pagelayout-frontpage #page-header { 

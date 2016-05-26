@@ -87,8 +87,6 @@ echo $OUTPUT->doctype() ?>
                 </ul>
             </div>
             
-             <?php echo $OUTPUT->navbar_button(); ?>
-            
             <div id ="signbuttom">
                 <?php
                         if (!isloggedin()) {

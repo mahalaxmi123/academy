@@ -7,7 +7,7 @@
 @import url(https://fonts.googleapis.com/css?family=Courgette|Playball|Signika|PT+Sans+Narrow);
 @import url(https://fonts.googleapis.com/css?family=Courgette|Playball|Signika|PT+Sans+Narrow|Oleo+Script);
 
-html { height: 100%; }
+
 
 body {
     padding-top: 0px;
@@ -305,8 +305,6 @@ body.pagelayout-frontpage #page-header p{
 
 /* Footer Start */
 .footer-main { background-color: #3D3D3D; color: #fff; padding: 26px 0; font-size: 12px; }
-//.socialnetworks, .footerlinks { display: inline-block; vertical-align: middle; }
-//.copyright-box { text-align: left; margin-top: 5px; }
 .footer-nav h1, .contact-info h1,.footer-desc h1{ color:#DAD9D9; padding: 10px; }
 #footer .footer-desc p, #footer .contact-info p { font-size: 14px; color: #dcdcdc; padding: 10px;}
 #footer .footer-nav ul { margin: 0px; }
@@ -328,7 +326,7 @@ body.pagelayout-frontpage #page-header p{
 pagelayout-login
 
 /*Login Start */
-#login-box { 
+html#login-box { 
 		background-image: url([[pix:theme|login-background]]);
 		background-size: cover;
 		background-repeat: no-repeat;

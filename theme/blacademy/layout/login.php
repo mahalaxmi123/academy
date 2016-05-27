@@ -53,23 +53,10 @@ echo $OUTPUT->doctype() ?>
     </div>
 
 </div>
-    
-<footer id="footer">
-    <div class="footer-foot">
-  	<div class="container-fluid">
-	  	 <?php if ($copyright_footer): ?>
-      	<p><?php echo $copyright_footer; ?></p>
-       <?php endif; ?>
-    </div>
-  </div>
-    
- <?php  echo $OUTPUT->standard_end_of_body_html() ?>
-</footer>
 
-<?php if (!empty($OUTPUT->standard_footer_html())) { ?>
-    <footer id="page-footer"> <?php echo $OUTPUT->standard_footer_html(); ?></footer>
-<?php } ?>
+<!-- Start footer -->
+<?php require_once(dirname(__FILE__).'/includes/footer.php'); ?>
+<!-- End -->
 
-<?php echo $OUTPUT->standard_end_of_body_html() ?>
 </body>
 </html>

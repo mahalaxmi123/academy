@@ -78,11 +78,12 @@ echo $OUTPUT->doctype() ?>
             <?php echo $html->heading; ?>
             
             <div class="nav-collapse collapse">
-                <a class="brand" href="<?php echo $CFG->wwwroot;?>"><?php echo
+                
+                <ul class="nav pull-right">
+                  <a class="brand" href="<?php echo $CFG->wwwroot;?>"><?php echo
                 format_string($SITE->shortname, true, array('context' => context_course::instance(SITEID)));
                 ?></a>
                 <?php echo $OUTPUT->custom_menu(); ?>
-                <ul class="nav pull-right">
                     <li><?php echo $OUTPUT->page_heading_menu(); ?></li>
                 </ul>
             </div>

@@ -52,7 +52,7 @@ echo $OUTPUT->doctype() ?>
                     <li><?php echo $OUTPUT->page_heading_menu(); ?></li>
                 </ul>
             </div>
-            	  <?php echo $OUTPUT->user_menu(); ?>
+            	  <?php  //echo $OUTPUT->user_menu(); ?>
         </div>
     </nav>
 </header>

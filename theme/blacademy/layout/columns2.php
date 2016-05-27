@@ -26,12 +26,12 @@
 $html = theme_blacademy_get_html_for_settings($OUTPUT, $PAGE);
 
 // Set default (LTR) layout mark-up for a two column page (side-pre-only).
-$regionmain = 'span9';
-$sidepre = 'span3 pull-right';
+$regionmain = 'span9 pull-right';
+$sidepre = 'span3 desktop-first-column';
 // Reset layout mark-up for RTL languages.
 if (right_to_left()) {
-    $regionmain = 'span9 pull-right';
-	$sidepre = 'span3 desktop-first-column';
+    $regionmain = 'span9';
+    $sidepre = 'span3 pull-right';
 }
 
 echo $OUTPUT->doctype() ?>
@@ -61,10 +61,12 @@ echo $OUTPUT->doctype() ?>
                     <li><?php echo $OUTPUT->page_heading_menu(); ?></li>
                 </ul>
             </div>
-            	  <?php echo $OUTPUT->user_menu(); ?>
+            	  <?php //echo $OUTPUT->user_menu(); ?>
         </div>
     </nav>
 </header>
+
+
 
 <?php echo $OUTPUT->full_header(); ?>
     

@@ -43,12 +43,23 @@ div.logo {
     z-index: 4030;
 }
 
-.navbar:hover {
+body.pagelayout-frontpage .navbar:hover {
 	background-color: #fefefe;
 	}
 
+body.pagelayout-frontpage .navbar .nav.pull-right{
+	float:left;
+	}
 
 
+body.pagelayout-frontpage .navbar .nav{
+	margin: 10px;
+    float: none;
+    margin-left: 70px;
+	}
+body.pagelayout-frontpage .navbar .brand {
+	}
+	
 .navbar .nav {
     margin: 20px;
     float:none;
@@ -155,6 +166,7 @@ body.pagelayout-frontpage #page-header {
   min-height: 700px;
   padding-top: 60px;
 }
+
 
 body.pagelayout-frontpage #page-header .container-fluid{
 	margin-top: 12%;
@@ -326,8 +338,8 @@ body.pagelayout-frontpage #page-header p{
 pagelayout-login
 
 /*Login Start */
-html#login-box { 
-		background-image: url([[pix:theme|login-background]]);
+#login-box{ 
+		background-image: url([[pix:theme|login-background]]) !important;
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: center center;

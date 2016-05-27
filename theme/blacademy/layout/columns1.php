@@ -38,39 +38,25 @@ echo $OUTPUT->doctype() ?>
 
 <?php echo $OUTPUT->standard_top_of_body_html() ?>
 
-<header role="banner" class="navbar navbar-fixed-top<?php echo $html->navbarclass ?> moodle-has-zindex">
+<header role="banner" class="navbar<?php echo $html->navbarclass ?> moodle-has-zindex">
     <nav role="navigation" class="navbar-inner">
         <div class="container-fluid">
-            <a class="brand" href="<?php echo $CFG->wwwroot;?>"><?php echo
+            <?php echo $html->heading; ?>
+            
+            <div class="nav-collapse collapse">
+                <a class="brand" href="<?php echo $CFG->wwwroot;?>"><?php echo
                 format_string($SITE->shortname, true, array('context' => context_course::instance(SITEID)));
                 ?></a>
-            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </a>
-            <div class="nav-collapse collapse">
                 <?php echo $OUTPUT->custom_menu(); ?>
                 <ul class="nav pull-right">
                     <li><?php echo $OUTPUT->page_heading_menu(); ?></li>
                 </ul>
             </div>
+            	  <?php echo $OUTPUT->user_menu(); ?>
         </div>
     </nav>
 </header>
 
-<div class="header-bottom">
-    <div class="container-fluid">
-    <div class="row-fluid">
-        <div class="span6">
-        <?php echo $html->heading; ?>
-        </div>
-        <div class="span6">
-        <?php echo $OUTPUT->user_menu(); ?>
-        </div>
-    </div>
-    </div>
-</div>
 
 <?php echo $OUTPUT->full_header(); ?>
     
@@ -88,25 +74,8 @@ echo $OUTPUT->doctype() ?>
 
 </div>
     
-<footer id="footer">
-    <div class="footer-in">
-        <div class="container-fluid">
-            <div id="course-footer"><?php echo $OUTPUT->course_footer(); ?></div>
-            <div class="row-fluid">
-                <div class="span6 copyright-box"><?php echo $html->footnote; ?></div>
-                <div class="span6 footerlinks-box">
-                    <!-- Start Social Icons -->
-                    <?php require_once(dirname(__FILE__) . '/includes/socialicons.php'); ?>
-                    <!-- End -->
-                </div>
-            </div>
-        </div>
-    </div>
-</footer>
-
-<?php if (!empty($OUTPUT->standard_footer_html())) { ?>
-    <footer id="page-footer"> <?php echo $OUTPUT->standard_footer_html(); ?></footer>
-<?php } ?>
-    
+<!-- Start footer -->
+<?php require_once(dirname(__FILE__).'/includes/footer.php'); ?>
+<!-- End -->
 </body>
 </html>

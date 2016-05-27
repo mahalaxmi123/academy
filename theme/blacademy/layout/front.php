@@ -101,7 +101,7 @@ echo $OUTPUT->doctype() ?>
     </nav>
 </header>
   
-<div id="page">
+
     <div id="page-header">
             <div class="container-fluid">
              <?php if ($bannerheading) { ?>
@@ -183,6 +183,6 @@ echo $OUTPUT->doctype() ?>
 <!-- Start footer -->
 <?php require_once(dirname(__FILE__).'/includes/footer.php'); ?>
 <!-- End -->
-</div>
+
 </body>
 </html>

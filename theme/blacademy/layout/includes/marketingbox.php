@@ -15,7 +15,7 @@ if (!empty($PAGE->theme->settings->backgroundcontent)) {
 if (!empty($PAGE->theme->settings->marketing1icon)) {
     $marketing1icon = $PAGE->theme->setting_file_url('marketing1icon', 'marketing1icon');
 } else {
-    $marketing1icon = $OUTPUT->pix_url('icon1', 'theme');
+    $marketing1icon = $OUTPUT->pix_url('librery', 'theme');
 }
 
 if (!empty($PAGE->theme->settings->displaymarketingbox)) {
@@ -47,7 +47,7 @@ if (!empty($PAGE->theme->settings->marketing1url)) {
 if (!empty($PAGE->theme->settings->marketing2icon)) {
     $marketing2icon = $PAGE->theme->setting_file_url('marketing2icon', 'marketing2icon');
 } else {
-    $marketing2icon = $OUTPUT->pix_url('icon2', 'theme');
+    $marketing2icon = $OUTPUT->pix_url('email', 'theme');
 }
 if (!empty($PAGE->theme->settings->marketing2heading)) {
     $marketing2heading = $PAGE->theme->settings->marketing2heading;
@@ -72,7 +72,7 @@ if (!empty($PAGE->theme->settings->marketing2url)) {
 if (!empty($PAGE->theme->settings->marketing3icon)) {
     $marketing3icon = $PAGE->theme->setting_file_url('marketing3icon', 'marketing3icon');
 } else {
-    $marketing3icon = $OUTPUT->pix_url('icon3', 'theme');
+    $marketing3icon = $OUTPUT->pix_url('forum', 'theme');
 }
 if (!empty($PAGE->theme->settings->marketing3heading)) {
     $marketing3heading = $PAGE->theme->settings->marketing3heading;
@@ -97,7 +97,7 @@ if (!empty($PAGE->theme->settings->marketing3url)) {
 if (!empty($PAGE->theme->settings->marketing4icon)) {
     $marketing4icon = $PAGE->theme->setting_file_url('marketing4icon', 'marketing4icon');
 } else {
-    $marketing4icon = $OUTPUT->pix_url('icon4', 'theme');
+    $marketing4icon = $OUTPUT->pix_url('help', 'theme');
 }
 if (!empty($PAGE->theme->settings->marketing4heading)) {
     $marketing4heading = $PAGE->theme->settings->marketing4heading;
@@ -290,12 +290,12 @@ if (!empty($PAGE->theme->settings->marketing4url)) {
                    }
                    ?>        
                   </div>
-                <div class="clearfix"></div>
                 </div> 
             </div>    
     </div>
    </div>
 </div>
+
 <?php 
 } else {
 ?>				

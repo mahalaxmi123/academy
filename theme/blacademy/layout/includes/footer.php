@@ -21,6 +21,7 @@
  * @copyright 2015 Nephzat Dev Team,nephzat.com
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
+ 
 $mapheader = theme_blacademy_get_setting('mapheader', 'format_text');
 
 $footer1header = theme_blacademy_get_setting('footer1header', 'format_text');
@@ -44,15 +45,30 @@ $footerbtitle = theme_blacademy_get_setting('footerbtitle', 'format_text');
 
 ?>
 
-
 <footer id="footer">    
   <div class="footer-main">
     <div class="container-fluid">
       <div class="row-fluid">
           
         <div class="span3">
-        	<div class="calender-header">
-            	     <h1> <?php echo $mapheader; ?></h1>
+        	<div class="map-header">
+            	<h1> <?php echo $mapheader; ?></h1>
+                <script
+					src="http://maps.googleapis.com/maps/api/js">
+			 	</script>
+
+				<script>
+					function initialize() {
+						var mapProp = {
+						center:new google.maps.LatLng(51.508742,-0.120850),
+					 	zoom:5,
+					 	 mapTypeId:google.maps.MapTypeId.ROADMAP
+					  		};
+					  	var map=new google.maps.Map(document.getElementById("googleMap"), mapProp);
+					   		}
+					   google.maps.event.addDomListener(window, 'load', initialize);
+                 </script> 
+                 <div id="googleMap" style="width:300px;height:240px;"></div>    	
             </div>
         </div>
           

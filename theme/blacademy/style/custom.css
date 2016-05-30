@@ -7,8 +7,6 @@
 @import url(https://fonts.googleapis.com/css?family=Courgette|Playball|Signika|PT+Sans+Narrow);
 @import url(https://fonts.googleapis.com/css?family=Courgette|Playball|Signika|PT+Sans+Narrow|Oleo+Script);
 
-
-
 body {
     padding-top: 0px;
 }
@@ -57,8 +55,15 @@ body.pagelayout-frontpage .navbar .nav{
     float: none;
     margin-left: 70px;
 	}
+	
 body.pagelayout-frontpage .navbar .brand {
+	margin-top:10px;
 	}
+	
+.dir-ltr .usermenu{
+	margin-top:20px;
+	}	
+
 	
 .navbar .nav {
     margin: 20px;
@@ -88,24 +93,19 @@ body.pagelayout-frontpage .navbar .brand {
   background: none;
 }
 
-.notloggedin #signbuttom {
-    float: right;
-    float: right;
+.notloggedin #signbuttom, .pagelayout-login #loginbtn {
     background-color: #46a8bf;
+	border:1px solid #64B7CA;
     font-size: 20px;
     padding: 10px 20px;
     border-radius: 20px;
     font-family: sans-serif;
+	background-image: linear-gradient(to bottom,#46a8bf, #46a8bf);
 }
 
-.notloggedin #signbuttom  a {
-    color:#ffffff;
-    text-decoration: none;
-}
-
-.notloggedin #signbuttom  a:hover {
-    color:#BFEAF4;
-}
+.pagelayout-login #loginbtn{
+	color:#ffffff;	
+	}
 
 .jsenabled .moodle-actionmenu[data-enhance] .toggle-display.textmenu{
     color:#46a8bf;
@@ -338,15 +338,72 @@ body.pagelayout-frontpage #page-header p{
 pagelayout-login
 
 /*Login Start */
-#login-box{ 
-		background-image: url([[pix:theme|login-background]]) !important;
-		background-size: cover;
-		background-repeat: no-repeat;
-		background-position: center center;
+input[type="radio"]+label, input[type="checkbox"]+label ,.loginpanel .forgetpass a { color:#46a8bf; }
+
+.pagelayout-login #loginbtn ,.notloggedin #signbuttom  a {
+    color:#ffffff;
+    text-decoration: none;
+	text-shadow:none;
+}
+
+.notloggedin #signbuttom  a:hover {
+    color:#BFEAF4;
+}
+
+	
+#page-login-index { 
+    background-image: url([[pix:theme|login-background]]) !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+  
+   .loginbox .loginform .form-label { float: left; text-align: right; width: 32%; white-space: nowrap; }
+   .loginbox .loginform .form-label label { font-size: 18px; color: #fff; }
+   .loginbox .loginform .form-input { float: left; }
+   .pagelayout-login .loginbox .loginform .form-input input, .loginbox .loginform .form-input input {  width:14em; margin-left: 10px; background-color: transparent;
+    border-radius: 16px; .loginbox , text-align:center; }
+	.pagelayout-login  input[type="text"] ,input[type="password"] { color:#fefefe; text-align:center;}
+   .loginbox .loginform { text-align: left; }
+   .clearer{ height: 20px; }
+   .loginbox .loginpanel .desc, .loginbox .guestsub { display: none;}
+    #loginbtn { background-image: linear-gradient(to bottom, #fff, #fff); background-color: #fff; }
+   #loginbtn { font-size: 16px; border-radius: 8px; padding: 8px 17px 8px; }
+   
+
+#footer-page { 
+	border: none;
+    bottom: 0px;
+    width: 100%;
+    padding: 0px;
+}
+	
+#page-login-index #page-content {
+	  margin: 13% auto;
+	  padding-top: 10px;
 	}
 	
-	
+#page .loginbox {
+	 width:30%;
+	 margin: auto;
+      }
 
+	
+.pagelayout-login  #footer-page .footer-foot p{
+	    color: #fff;
+		margin: 6px;
+	}
+	
+.loginbox h2 {
+	color: #fefefe;
+    margin: 5px;
+    text-align: center;
+    background-color: #56861f;
+    border: 1px solid #73974A;
+    border-radius: 40px;
+    padding: 2px;
+    font-weight: 500;
+}
 /*Login End */
 
 /*

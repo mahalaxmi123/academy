@@ -38,24 +38,32 @@
  * @return string The parsed CSS The parsed CSS.
  */
 function theme_blacademy_process_css($css, $theme) {
-
+    global $OUTPUT;
     // Set the background image for the logo.
     $logo = $theme->setting_file_url('logo', 'logo');
     $css = theme_blacademy_set_logo($css, $logo);
-    
-    // Set the front-header image for the headerimg.
+    // Set the background image for the headerimg.
+	
     $headerimg = $theme->setting_file_url('headerimg', 'headerimg');
     if (!isset($headerimg)) {
         $headerimg = $OUTPUT->pix_url('headerimg', 'theme');
     }
     $css = theme_blacademy_set_headerimg($css, $headerimg);
     
-    // Set the marketingbox background image for the backgroundimg.
+	/*
+    $headerimg = $theme->setting_file_url('headerimg', 'headerimg');
+    if (!isset($headerimg)) {
+        $headerimg = $OUTPUT->pix_url('headerimg', 'theme');
+    }
+
+    $css = theme_blacademy_set_headerimg($css, $headerimg); */
+	
+	// Set the marketingbox background image for the backgroundimg.
     $backgroundimg = $theme->setting_file_url('backgroundimg', 'backgroundimg');
     if (!isset($backgroundimg)) {
         $backgroundimg = $OUTPUT->pix_url('backgroundimg', 'theme');
     }
-    $css = theme_blacademy_set_backgroundimg($css, $backgroundimg);
+	$css = theme_blacademy_set_backgroundimg($css, $backgroundimg);
 
     // Set custom CSS.
     if (!empty($theme->settings->customcss)) {
@@ -64,7 +72,6 @@ function theme_blacademy_process_css($css, $theme) {
         $customcss = null;
     }
     $css = theme_blacademy_set_customcss($css, $customcss);
-
     return $css;
 }
 

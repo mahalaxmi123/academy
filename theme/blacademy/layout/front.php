@@ -152,7 +152,8 @@ echo $OUTPUT->doctype() ?>
                         </div>
                 </div>
                 <div class="span3">
-                    <div class="content-top-col-2"></div>
+                    <div class="explorebutton">
+                    </div>
                 </div>
             </div>
         </div>

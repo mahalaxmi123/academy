@@ -24,6 +24,7 @@
 
 // Get the HTML for the settings bits.
 $html = theme_blacademy_get_html_for_settings($OUTPUT, $PAGE);
+$copyright_footer = theme_blacademy_get_setting('copyright_footer');
 
 echo $OUTPUT->doctype() ?>
 <html id="login-box" <?php echo $OUTPUT->htmlattributes(); ?>>
@@ -54,9 +55,17 @@ echo $OUTPUT->doctype() ?>
 
 </div>
 
-<!-- Start footer -->
-<?php require_once(dirname(__FILE__).'/includes/footer.php'); ?>
-<!-- End -->
+<div id="footer-page">
+	<div class="row-fluid">
+        <div class="footer-foot">
+            <div class="container-fluid">
+                 <?php if ($copyright_footer): ?>
+                <p><?php echo $copyright_footer; ?></p>
+               <?php endif; ?>
+            </div>
+        </div>
+    </div>
+</div>
 
 </body>
 </html>

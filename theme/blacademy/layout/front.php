@@ -91,7 +91,7 @@ echo $OUTPUT->doctype() ?>
             <div id ="signbuttom">
                 <?php
                         if (!isloggedin()) {
-                            echo '<a href="http://mahalaxmi.bogati/academy/login/index.php">Sign In</a>';
+                            echo '<a href="'.$CFG->wwwroot.'/login/index.php">Sign In</a>';
                         }
                         if (isloggedin()) {
                             echo $OUTPUT->user_menu();

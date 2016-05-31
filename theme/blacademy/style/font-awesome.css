@@ -23,6 +23,8 @@
     color: #0070a8;
     content: "\f015"
 }
+
+
 .fa {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
@@ -31,6 +33,9 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+
+
  makes the font 33% larger relative to the icon container 
 .fa-lg {
   font-size: 1.33333333em;
@@ -652,6 +657,11 @@
 .fa-hand-o-right:before {
   content: "\f0a4";
 }
+
+.fa-envelope-square:before {
+  content: "\f199";
+}
+
 .fa-hand-o-left:before {
   content: "\f0a5";
 }
@@ -690,6 +700,10 @@
 }
 .fa-arrows-alt:before {
   content: "\f0b2";
+}
+
+.fa-envelope-square:before {
+  content: "\f199";
 }
 .fa-group:before,
 .fa-users:before {

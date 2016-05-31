@@ -58,6 +58,7 @@ if (!empty($PAGE->theme->settings->Infoblockcontent)) {
 
 
 
+
 echo $OUTPUT->doctype() ?>
 <html <?php echo $OUTPUT->htmlattributes(); ?>>
 <head>
@@ -151,9 +152,10 @@ echo $OUTPUT->doctype() ?>
                               </div> 
                         </div>
                 </div>
-                <div class="span3">
-                    <div class="explorebutton">
-                    </div>
+                
+                
+                <div class="span3"> 
+                    	<a href="#" class="btn btn-info" role="button">Explore</a>  
                 </div>
             </div>
         </div>

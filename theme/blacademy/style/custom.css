@@ -93,7 +93,7 @@ body.pagelayout-frontpage .navbar .brand {
   background: none;
 }
 
-.notloggedin #signbuttom, .pagelayout-login #loginbtn {
+.pagelayout-login #loginbtn {
     background-color: #46a8bf;
 	border:1px solid #64B7CA;
     font-size: 20px;
@@ -102,6 +102,19 @@ body.pagelayout-frontpage .navbar .brand {
     font-family: sans-serif;
 	background-image: linear-gradient(to bottom,#46a8bf, #46a8bf);
 }
+
+.notloggedin #signbuttom{
+	margin-top: 20px;;
+	display: inline;
+    float: right;
+    background-color: #46a8bf;
+    border: 1px solid #64B7CA;
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-family: sans-serif;
+    background-image: linear-gradient(to bottom,#46a8bf, #46a8bf);
+	}
 
 .pagelayout-login #loginbtn{
 	color:#ffffff;	
@@ -214,8 +227,7 @@ body.pagelayout-frontpage #page-header p{
  .pagelayout-frontpage .marketingbox {
  background-image: url([[setting:backgroundimg]]);
  background-position: left top;
- background-repeat: no-repeat;
- background-size: 100%;
+ background-repeat:repeat;
  height: auto;
  padding-bottom : 40px;
 }
@@ -315,6 +327,17 @@ body.pagelayout-frontpage #page-header p{
 
 .block .content { padding: 16px 14px;}
 
+#Infoblock .span3 .btn-info {
+	margin:90px;
+	 background-color: #46a8bf;
+	border:1px solid #64B7CA;
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-family: sans-serif;
+	background-image: linear-gradient(to bottom,#46a8bf, #46a8bf);	
+	}
+
 
 /* Footer Start */
 .footer-main { background-color: #3D3D3D; color: #fff; padding: 26px 0; font-size: 12px; }
@@ -387,13 +410,16 @@ input[type="radio"]+label, input[type="checkbox"]+label ,.loginpanel .forgetpass
 #page .loginbox {
 	 width:30%;
 	 margin: auto;
+	 padding:20px;
       }
 
 	
 .pagelayout-login  #footer-page .footer-foot p{
 	    color: #fff;
-		margin: 6px;
+		margin: 7px;
 	}
+	
+
 	
 .loginbox h2 {
 	color: #fefefe;

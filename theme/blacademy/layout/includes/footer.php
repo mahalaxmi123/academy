@@ -53,22 +53,7 @@ $footerbtitle = theme_blacademy_get_setting('footerbtitle', 'format_text');
         <div class="span3">
         	<div class="map-header">
             	<h1> <?php echo $mapheader; ?></h1>
-                <script
-					src="http://maps.googleapis.com/maps/api/js">
-			 	</script>
-
-				<script>
-					function initialize() {
-						var mapProp = {
-						center:new google.maps.LatLng(51.508742,-0.120850),
-					 	zoom:5,
-					 	 mapTypeId:google.maps.MapTypeId.ROADMAP
-					  		};
-					  	var map=new google.maps.Map(document.getElementById("googleMap"), mapProp);
-					   		}
-					   google.maps.event.addDomListener(window, 'load', initialize);
-                 </script> 
-                 <div id="googleMap" style="width:300px;height:240px;"></div>    	
+                	<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3505.092638924225!2d77.2687097!3d28.5369351!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce1584e462f17%3A0xb6f81c809b350f96!2sBallistic+Learning+Private+Limited!5e0!3m2!1sen!2sin!4v1464680932218" width="300" height="240" frameborder="0" style="border:0" allowfullscreen></iframe>
             </div>
         </div>
           

@@ -128,18 +128,6 @@ function theme_blacademy_pluginfile($course, $cm, $context, $filearea, $args, $f
     } else if ($context->contextlevel == CONTEXT_SYSTEM and $filearea === 'marketing4icon') {
         $theme = theme_config::load('blacademy');
         return $theme->setting_file_serve('marketing4icon', $args, $forcedownload, $options);
-    } else if ($context->contextlevel == CONTEXT_SYSTEM and $filearea === 'mainbox1icon') {
-        $theme = theme_config::load('blacademy');
-        return $theme->setting_file_serve('mainbox1icon', $args, $forcedownload, $options);
-    } else if ($context->contextlevel == CONTEXT_SYSTEM and $filearea === 'mainbox2icon') {
-        $theme = theme_config::load('blacademy');
-        return $theme->setting_file_serve('mainbox2icon', $args, $forcedownload, $options);
-    } else if ($context->contextlevel == CONTEXT_SYSTEM and $filearea === 'mainbox3icon') {
-        $theme = theme_config::load('blacademy');
-        return $theme->setting_file_serve('mainbox3icon', $args, $forcedownload, $options);
-    } else if ($context->contextlevel == CONTEXT_SYSTEM and $filearea === 'mainbox4icon') {
-        $theme = theme_config::load('blacademy');
-        return $theme->setting_file_serve('mainbox4icon', $args, $forcedownload, $options);
     }
      else {
         send_file_not_found();

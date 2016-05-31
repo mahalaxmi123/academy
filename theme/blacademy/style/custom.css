@@ -57,7 +57,7 @@ body.pagelayout-frontpage .navbar .nav{
 	}
 	
 body.pagelayout-frontpage .navbar .brand {
-	margin-top:10px;
+	margin-top:20px;
 	}
 	
 .dir-ltr .usermenu{
@@ -76,6 +76,8 @@ body.pagelayout-frontpage .navbar .brand {
     text-shadow: none;
     color: #46a8bf;
 }
+
+.navbar .brand { padding: 0px;}
 
 .navbar .nav>li>a {
     float: none;

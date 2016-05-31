@@ -1,11 +1,11 @@
-!
+/*!
  *  Font Awesome 4.2.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
  */
 /* FONT PATH
  * -------------------------- */
-
-@font-face {  where FontName and fontname represents the name of the font you want to add
+ /*
+@font-face { /* where FontName and fontname represents the name of the font you want to add
      font-family: 'FontAwesome';
      src: url([[font:theme|fontawesome-webfont.eot]);
      src: url([[font:theme|fontawesome-webfont.eot]]) format('embedded-opentype'),
@@ -15,14 +15,6 @@
      font-weight: normal;
      font-style: normal;
 }
-
-.navbar-inner .nav .brand:before {
-    font-family: FontAwesome;
-    font-size: 1em;
-    margin-right: .3em;
-    color: #0070a8;
-    content: "\f015"
-}
 .fa {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
@@ -31,7 +23,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
- makes the font 33% larger relative to the icon container 
+/* makes the font 33% larger relative to the icon container 
 .fa-lg {
   font-size: 1.33333333em;
   line-height: 0.75em;
@@ -173,7 +165,7 @@
 .fa-inverse {
   color: #ffffff;
 }
- Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
+/* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
    readers do not read off random characters that represent icons 
    
   content: "\f000";
@@ -723,11 +715,10 @@
 .fa-square:before {
   content: "\f0c8";
 }
-/*
 .fa-navicon:before,
 .fa-reorder:before,
 .fa-bars:before {
- content: "\f0c9";
+  content: "\f0c9";
 }
 .fa-list-ul:before {
   content: "\f0ca";

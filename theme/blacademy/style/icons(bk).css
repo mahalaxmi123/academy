@@ -1,4 +1,4 @@
- @group Block Icons
+/* @group Block Icons
 .block .header .title h2::after {
   background-color: #92bd44;
   content: "";
@@ -8,7 +8,7 @@
   position: relative;
   top: 10px;
 }
-/*
+
 .block .header .title h2:before {
     font-family: FontAwesome;
     font-size: 1em;

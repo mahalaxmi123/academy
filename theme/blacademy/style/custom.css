@@ -424,6 +424,15 @@ input[type="radio"]+label, input[type="checkbox"]+label ,.loginpanel .forgetpass
 
 /*Login End */
 
+/* Course Box */
+.courses .course-box { border: 1px solid #EFEFEF; margin-bottom: 30px; min-height: 370px; background-color: #fff;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1); }
+.used-region-side-pre .courses .course-box { min-height: 390px; }
+.courses .course-box .courseimage { border-bottom: 1px solid #EFEFEF; text-align: center; min-height: 180px; }
+.courses .course-box .courseimage img { width: 100%; min-height: 180px; max-height: 180px; }
+.courses .course-box .content { margin: 15px 10px 10px 10px; }
+.courses .course-box .info h4 { margin-top: 0; }
+/* End */
 /*
  Custom CSS Settings
 */

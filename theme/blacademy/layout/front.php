@@ -25,6 +25,18 @@
 // Get the HTML for the settings bits.
 $html = theme_blacademy_get_html_for_settings($OUTPUT, $PAGE);
 
+if (!empty($PAGE->theme->settings->logo)) {
+    $logourl = $PAGE->theme->setting_file_url('logo', 'logo');
+    $logoalt = get_string('logo', 'theme_blacademy', $SITE->fullname);
+} else {
+    $logourl = $OUTPUT->pix_url('logo', 'theme');
+    $logoalt = get_string('moodlelogo', 'theme_blacademy');
+}
+
+if (!empty($PAGE->theme->settings->alttext)) {
+    $logoalt = format_string($PAGE->theme->settings->alttext);
+}
+
 // Set default (LTR) layout mark-up for a two column page (side-pre-only).
 $regionmain = 'span9';
 $sidepre = 'span3 pull-right';
@@ -33,6 +45,7 @@ if (right_to_left()) {
     $regionmain = 'span9 pull-right';
 	$sidepre = 'span3 desktop-first-column';
 }
+
 
 if (!empty($PAGE->theme->settings->bannerheading)) {
     $bannerheading = $PAGE->theme->settings->bannerheading;
@@ -76,18 +89,23 @@ echo $OUTPUT->doctype() ?>
 <header role="banner" class="navbar<?php echo $html->navbarclass ?> moodle-has-zindex">
     <nav role="navigation" class="navbar-inner">
         <div class="container-fluid">
-            <?php echo $html->heading; ?>
-            
-            <div class="nav-collapse collapse">
-                
-                <ul class="nav pull-right">
-                  <a class="brand" href="<?php echo $CFG->wwwroot;?>"><?php echo
-                format_string($SITE->shortname, true, array('context' => context_course::instance(SITEID)));
-                ?></a>
-                <?php echo $OUTPUT->custom_menu(); ?>
-                    <li><?php echo $OUTPUT->page_heading_menu(); ?></li>
-                </ul>
-            </div>
+             <div class="logo img-responsive" src="<?php echo $logourl; ?>" alt="<?php echo $logoalt ?>" /></div>
+              <a class="brand" href="<?php echo $CFG->wwwroot;?>">
+                        <h4><?php echo format_string($SITE->shortname, true, array('context' => context_course::instance(SITEID)));?></h4>               
+                    </a>  
+                      
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </a>
+                    
+             <div class="nav-collapse collapse">
+                        <?php echo $OUTPUT->custom_menu(); ?>
+                        <ul class="nav pull-right">
+                            <li><?php echo $OUTPUT->page_heading_menu(); ?></li>
+                        </ul>
+                    </div>
             
             <div id ="signbuttom">
                 <?php
@@ -102,7 +120,6 @@ echo $OUTPUT->doctype() ?>
         </div>
     </nav>
 </header>
-  
 
     <div id="page-header">
             <div class="container-fluid">

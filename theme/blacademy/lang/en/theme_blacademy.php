@@ -25,16 +25,16 @@
 $string['choosereadme'] = '
 <div class="clearfix">
 <div class="well">
-<h2>Ujjivan</h2>
-<p><img class=img-polaroid src="ujjivan/pix/screenshot.png" /></p>
+<h2>blacademy</h2>
+<p><img class=img-polaroid src="blacademy/pix/screenshot.png" /></p>
 </div>
 <div class="well">
 <h3>About</h3>
-<p>Ujjivan is a modified Moodle bootstrap theme which inherits styles and renderers from its parent theme.</p>
+<p>blacademy is a modified Moodle bootstrap theme which inherits styles and renderers from its parent theme.</p>
 <h3>Parents</h3>
 <p>This theme is based upon the Bootstrapbase theme, which was created for Moodle 2.5</p>
 <h3>Theme Credits</h3>
-<p>Authors: Amit Singh<br>
+<p><br>
 Website: <a href="http://www.ballisticlearning.com/">www.ballisticlearning.com</a>
 </p>
 </div></div>';
@@ -85,8 +85,8 @@ $string['displaymarketingbox'] = 'Display front page Marketingbox';
 $string['displaymarketingboxdesc'] = 'Show or Hide Front page Marketingbox';
 
 // Readme.
-$string['readme_title'] = 'eduhub read-me';
-$string['readme_desc'] = 'Please {$a->url} containing more information about the eduhub theme.';
+$string['readme_title'] = 'blacademy read-me';
+$string['readme_desc'] = 'Please {$a->url} containing more information about the blacademy theme.';
 $string['readme_click'] = 'Click for README.txt';
 
 $string['backgroundimg'] = 'backgroundimg-image';
@@ -100,8 +100,6 @@ $string['marketing1icon'] = 'Marketing1 Icon';
 $string['marketing1icondesc'] = 'Upload Marketing1 Icon';
 $string['marketing1heading'] = 'Marketing1 Heading';
 $string['marketing1headingdesc'] = 'Enter Marketing1 Heading Text';
-$string['marketing1subheading'] = 'Marketing1 Subheading';
-$string['marketing1subheadingdesc'] = 'Enter Marketing1 Subheading Text';
 $string['marketing1content'] = 'Marketing1 Content';
 $string['marketing1contentdesc'] = 'Enter Marketing1 Content Text';
 $string['marketing1url'] = 'Marketing1 URL';
@@ -111,8 +109,6 @@ $string['marketing2icon'] = 'Marketing2 Icon';
 $string['marketing2icondesc'] = 'Upload Marketing2 Icon';
 $string['marketing2heading'] = 'Marketing2 Heading';
 $string['marketing2headingdesc'] = 'Enter Marketing2 Heading Text';
-$string['marketing2subheading'] = 'Marketing2 Subheading';
-$string['marketing2subheadingdesc'] = 'Enter Marketing2 Subheading Text';
 $string['marketing2content'] = 'Marketing2 Content';
 $string['marketing2contentdesc'] = 'Enter Marketing2 Content Text';
 $string['marketing2url'] = 'Marketing1 URL';
@@ -122,8 +118,6 @@ $string['marketing3icon'] = 'Marketing3 Icon';
 $string['marketing3icondesc'] = 'Upload Marketing3 Icon';
 $string['marketing3heading'] = 'Marketing3 Heading';
 $string['marketing3headingdesc'] = 'Enter Marketing3 Heading Text';
-$string['marketing3subheading'] = 'Marketing3 Subheading';
-$string['marketing3subheadingdesc'] = 'Enter Marketing3 Subheading Text';
 $string['marketing3content'] = 'Marketing3 Content';
 $string['marketing3contentdesc'] = 'Enter Marketing3 Content Text';
 $string['marketing3url'] = 'Marketing1 URL';
@@ -133,8 +127,6 @@ $string['marketing4icon'] = 'Marketing4 Icon';
 $string['marketing4icondesc'] = 'Upload Marketing4 Icon';
 $string['marketing4heading'] = 'Marketing4 Heading';
 $string['marketing4headingdesc'] = 'Enter Marketing4 Heading Text';
-$string['marketing4subheading'] = 'Marketing4 Subheading';
-$string['marketing4subheadingdesc'] = 'Enter Marketing4 Subheading Text';
 $string['marketing4content'] = 'Marketing4 Content';
 $string['marketing4contentdesc'] = 'Enter Marketing4 Content Text';
 $string['marketing4url'] = 'Marketing1 URL';

@@ -104,8 +104,17 @@ echo $OUTPUT->doctype() ?>
                         <?php echo $OUTPUT->custom_menu(); ?>
                         <ul class="nav pull-right">
                             <li><?php echo $OUTPUT->page_heading_menu(); ?></li>
-                        </ul>
-                    </div>
+                            <div class="searchbox">
+            <form action="<?php p($CFG->wwwroot) ?>/course/search.php">
+                <label class="hidden" for="search-1" style="display: none;">Search iCity</label>
+                <div class="search-box grey-box bg-white clear-fix">
+                    <input placeholder="<?php echo get_string("searchcourses")?>" accesskey="6" class="search_tour bg-white no-border left search-box__input ui-autocomplete-input" type="text" name="search" id="search-1" autocomplete="off">
+                    <button type="submit" class="no-border bg-white pas search-box__button"><abbr class="fa fa-search"></abbr></button>
+                </div>
+            </form>
+        </div>
+ 					 </ul>
+            </div>
             
             <div id ="signbuttom">
                 <?php
@@ -172,7 +181,8 @@ echo $OUTPUT->doctype() ?>
                 
                 
                 <div class="span3"> 
-                    	<a href="#" class="btn btn-info" role="button">Explore</a>  
+              
+                        <a class="btn btn-info" href="#">Explore<i class="fa fa-play-circle"></i></a>
                 </div>
             </div>
         </div>

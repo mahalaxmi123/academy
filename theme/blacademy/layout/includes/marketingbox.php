@@ -29,11 +29,7 @@ if (!empty($PAGE->theme->settings->marketing1heading)) {
 } else {
     $marketing1heading = '';
 }
-if (!empty($PAGE->theme->settings->marketing1subheading)) {
-    $marketing1subheading = $PAGE->theme->settings->marketing1subheading;
-} else {
-    $marketing1subheading = '';
-}
+
 if (!empty($PAGE->theme->settings->marketing1content)) {
     $marketing1content = $PAGE->theme->settings->marketing1content;
 } else {
@@ -54,11 +50,7 @@ if (!empty($PAGE->theme->settings->marketing2heading)) {
 } else {
     $marketing2heading = '';
 }
-if (!empty($PAGE->theme->settings->marketing2subheading)) {
-    $marketing2subheading = $PAGE->theme->settings->marketing2subheading;
-} else {
-    $marketing2subheading = '';
-}
+
 if (!empty($PAGE->theme->settings->marketing2content)) {
     $marketing2content = $PAGE->theme->settings->marketing2content;
 } else {
@@ -79,11 +71,7 @@ if (!empty($PAGE->theme->settings->marketing3heading)) {
 } else {
     $marketing3heading = '';
 }
-if (!empty($PAGE->theme->settings->marketing3subheading)) {
-    $marketing3subheading = $PAGE->theme->settings->marketing3subheading;
-} else {
-    $marketing3subheading = '';
-}
+
 if (!empty($PAGE->theme->settings->marketing3content)) {
     $marketing3content = $PAGE->theme->settings->marketing3content;
 } else {
@@ -104,11 +92,7 @@ if (!empty($PAGE->theme->settings->marketing4heading)) {
 } else {
     $marketing4heading = '';
 }
-if (!empty($PAGE->theme->settings->marketing4subheading)) {
-    $marketing4subheading = $PAGE->theme->settings->marketing4subheading;
-} else {
-    $marketing4subheading = '';
-}
+
 if (!empty($PAGE->theme->settings->marketing4content)) {
     $marketing4content = $PAGE->theme->settings->marketing4content;
 } else {
@@ -157,14 +141,7 @@ if (!empty($PAGE->theme->settings->marketing4url)) {
                    <?php 
                    }
                    ?>
-                   <?php if ($marketing1subheading) { ?>
-                   <h4><?php echo $marketing1subheading?></h4>
-                   <?php
-                   } else {
-                   ?>
-                      <?php 
-                   }
-                   ?>       
+                      
                    <?php if ($marketing1content) { ?>
                    <p><?php echo $marketing1content?></p>
                    <?php
@@ -193,15 +170,7 @@ if (!empty($PAGE->theme->settings->marketing4url)) {
                    <?php 
                    }
                    ?>
-                   <?php if ($marketing2subheading) { ?>
-                   <h4><?php echo $marketing2subheading?></h4>
-                   <?php 
-                   } else {
-                   ?>
-                   <?php 
-                   }
-                   ?>
-
+                 
                    <?php if ($marketing2content) { ?>
                    <p><?php echo $marketing2content?></p>
                    <?php
@@ -229,14 +198,7 @@ if (!empty($PAGE->theme->settings->marketing4url)) {
                    <?php 
                    }
                    ?>
-                   <?php if ($marketing3subheading) { ?>
-                   <h4><?php echo $marketing3subheading?></h4>
-                   <?php 
-                   } else {
-                   ?>
-                   <?php 
-                   }
-                   ?>
+                  
                    <?php if ($marketing3content) { ?>
                    <p><?php echo $marketing3content?></p>
                    <?php 
@@ -264,15 +226,7 @@ if (!empty($PAGE->theme->settings->marketing4url)) {
                    ?>
                    <?php 
                    }
-                   ?>
-                   <?php if ($marketing4subheading) { ?>
-                   <h4><?php echo $marketing4subheading?></h4>
-                   <?php 
-                   } else {
-                   ?>
-                   <?php 
-                   }
-                   ?>       
+                   ?>      
                    <?php if ($marketing4content) { ?>
                    <p><?php echo $marketing4content?></p>
                    <?php 

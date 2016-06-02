@@ -55,6 +55,11 @@ body.pagelayout-frontpage .navbar:hover {
   	margin-top: 20px;
 }
 
+.navbar .nav.pull-right {
+	    float: left;
+		margin-left: 60px;
+	}
+
 .navbar .brand,.navbar .nav>li,.navbar .nav>li>a {
     font-size:18px;
     text-decoration: none;
@@ -330,7 +335,7 @@ body.pagelayout-frontpage #page-header p{
 
 /* Footer Start */
 .footer-main { background-color: #3D3D3D; color: #fff; padding: 26px 0; font-size: 12px; }
-.footer-nav h1, .contact-info h1,.footer-desc h1{ color:#DAD9D9; padding: 10px; }
+.map-header h1, .footer-nav h1, .contact-info h1,.footer-desc h1{ color:#DAD9D9; padding: 10px; }
 #footer .footer-desc p, #footer .contact-info p { font-size: 14px; color: #dcdcdc; padding: 10px;}
 #footer .footer-nav ul { margin: 0px; }
 #footer .footer-nav ul li { font-size: 14px; list-style: none; padding-left: 10px; }
@@ -338,8 +343,7 @@ body.pagelayout-frontpage #page-header p{
 #footer a { color: #dcdcdc; }
 #footer a:hover { text-decoration: none; color: #c52c2e; }
 #footer .row-fluid [class*="span"] { min-height: auto; }
-#footer .footer-foot p { margin: 0; font-size: 16px; color: #dcdcdc;;}
-.fa {font-size: 24px; padding-right: 10px; margin-top: 8px; }
+#footer .footer-foot p { margin: 0; font-size: 16px; color: #dcdcdc;}
 .footer-foot { background-color:#2b2b2b; padding: 10px; text-align: center;
 }
 #page-footer { border: none; padding: 0; margin: 0; }
@@ -422,7 +426,104 @@ input[type="radio"]+label, input[type="checkbox"]+label ,.loginpanel .forgetpass
 }
 
 
-/*Login End */
+/* Course Box */
+
+/* Search button*/ 
+	/* Classes for new search box */
+
+.searchbox {
+	float: right;
+
+}
+
+.greybox {
+	border: 1px solid #ccc;
+}
+
+.search-box__input {
+	width: 280px;
+}
+
+.search-box__button {
+	background-color: aqua;
+	width: 27px;
+	margin: 1px !important;
+	-webkit-transition: background-color .2s ease-in-out;
+	-moz-transition: background-color .2s ease-in-out;
+	-o-transition: background-color .2s ease-in-out;
+	transition: background-color .2s ease-in-out;
+}
+
+.search-box__button {
+	background-color: transparent;
+	background-image: linear-gradient(to bottom, transparent, transparent);
+	-webkit-box-shadow:none;
+	box-shadow:none;
+	}
+	
+.search-box__button :active {
+	background-color: #3292BF;
+	background-image: linear-gradient(to bottom, #3292BF,  #3292BF);
+	}	
+
+.search-box__button:hover {
+	background-color: #00adef;
+	background-image: linear-gradient(to bottom, #00adef,  #00adef);
+	color: #fff !important;
+}
+
+.search-box {
+	float: right;
+}
+
+input[type="text"] {
+	    background-color: transparent;
+		-webkit-box-shadow: none;
+		box-shadow:none;
+		
+	}
+
+
+
+.bg-white {
+	background-color: transparent;
+    border: 1px solid #46A8BF;
+}
+
+.pas {
+	padding: 5px;
+}
+
+.no-border {
+	border: 0 !important;
+	border-radius: 0px !important;
+	-webkit-box-shadow: 0px !important;
+}
+
+#search-1 {
+	padding: 5px 3px !important;
+	margin: 0 !important;
+	font-size: 14px;
+	color: #444;
+}
+
+#search-1:focus {
+	border: none !important;
+	box-shadow: none;
+	-webkit-box-shadow: none;
+}
+
+.icon-search {
+	font-size: 1.4em;
+}
+
+.fa {font-size: 16px; }
+
+.searchbox .bg-white .search-box__input {
+    width: 160px;
+}
+
+/* end */
 
 /* Course Box */
 .courses .course-box { border: 1px solid #EFEFEF; margin-bottom: 30px; min-height: 370px; background-color: #fff;

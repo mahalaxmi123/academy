@@ -34,6 +34,17 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.bg-white:before {
+    font-size: 16px;
+    padding-right: 10px;
+}
+
+
+.btn btn-info:after {
+    margin-right: 10px;
+    font-size: 20px;
+    color: #fff;
+}
 
 
  makes the font 33% larger relative to the icon container 
@@ -183,6 +194,11 @@
    
   content: "\f000";
 }
+
+.fa-play-circle:before {
+    content: "\f144";
+}
+
 .fa-music:before {
   content: "\f001";
 }
@@ -719,6 +735,8 @@
 .fa-flask:before {
   content: "\f0c3";
 }
+
+
 .fa-cut:before,
 .fa-scissors:before {
   content: "\f0c4";

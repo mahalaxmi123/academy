@@ -201,15 +201,6 @@ $setting = new admin_setting_configtext($name, $title, $description, $default);
 $setting->set_updatedcallback('theme_reset_all_caches');
 $temp->add($setting);
 
-// Marketing1subheading.
-$name = 'theme_blacademy/marketing1subheading';
-$title = get_string('marketing1subheading', 'theme_blacademy');
-$description = get_string('marketing1subheadingdesc', 'theme_blacademy');
-$default = 'Forum And Chat';
-$setting = new admin_setting_configtext($name, $title, $description, $default);
-$setting->set_updatedcallback('theme_reset_all_caches');
-$temp->add($setting);
-
 // Marketing1content.
 $name = 'theme_blacademy/marketing1content';
 $title = get_string('marketing1content', 'theme_blacademy');
@@ -241,15 +232,6 @@ $name = 'theme_blacademy/marketing2heading';
 $title = get_string('marketing2heading', 'theme_blacademy');
 $description = get_string('marketing2headingdesc', 'theme_blacademy');
 $default = 'We serve';
-$setting = new admin_setting_configtext($name, $title, $description, $default);
-$setting->set_updatedcallback('theme_reset_all_caches');
-$temp->add($setting);
-
-// Marketing2subheading.
-$name = 'theme_blacademy/marketing2subheading';
-$title = get_string('marketing2subheading', 'theme_blacademy');
-$description = get_string('marketing2subheadingdesc', 'theme_blacademy');
-$default = 'online courses';
 $setting = new admin_setting_configtext($name, $title, $description, $default);
 $setting->set_updatedcallback('theme_reset_all_caches');
 $temp->add($setting);
@@ -289,14 +271,6 @@ $setting = new admin_setting_configtext($name, $title, $description, $default);
 $setting->set_updatedcallback('theme_reset_all_caches');
 $temp->add($setting);
 
-// Marketing3subheading.
-$name = 'theme_blacademy/marketing3subheading';
-$title = get_string('marketing3subheading', 'theme_blacademy');
-$description = get_string('marketing3subheadingdesc', 'theme_blacademy');
-$default = 'support';
-$setting = new admin_setting_configtext($name, $title, $description, $default);
-$setting->set_updatedcallback('theme_reset_all_caches');
-$temp->add($setting);
 
 // Marketing3content.
 $name = 'theme_blacademy/marketing3content';
@@ -330,24 +304,6 @@ $title = get_string('marketing4heading', 'theme_blacademy');
 $description = get_string('marketing4headingdesc', 'theme_blacademy');
 $default = 'Ask que';
 $setting = new admin_setting_configtext($name, $title, $description, $default);
-$setting->set_updatedcallback('theme_reset_all_caches');
-$temp->add($setting);
-
-// Marketing4subheading.
-$name = 'theme_blacademy/marketing4subheading';
-$title = get_string('marketing4subheading', 'theme_blacademy');
-$description = get_string('marketing4subheadingdesc', 'theme_blacademy');
-$default = 'we give you answere';
-$setting = new admin_setting_configtext($name, $title, $description, $default);
-$setting->set_updatedcallback('theme_reset_all_caches');
-$temp->add($setting);
-
-// Marketing4content.
-$name = 'theme_blacademy/marketing4content';
-$title = get_string('marketing4content', 'theme_blacademy');
-$description = get_string('marketing4contentdesc', 'theme_blacademy');
-$default = 'Contrary to popular belief, Lorem Ipsum is not simply ...';
-$setting = new admin_setting_configtextarea($name, $title, $description, $default);
 $setting->set_updatedcallback('theme_reset_all_caches');
 $temp->add($setting);
 

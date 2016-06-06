@@ -51,10 +51,12 @@ $footerbtitle = theme_blacademy_get_setting('footerbtitle', 'format_text');
       <div class="row-fluid">
           
         <div class="span3">
-        	<div class="map-header">
-            	<h1> <?php echo $mapheader; ?></h1>
-                	<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3505.092638924225!2d77.2687097!3d28.5369351!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce1584e462f17%3A0xb6f81c809b350f96!2sBallistic+Learning+Private+Limited!5e0!3m2!1sen!2sin!4v1464680932218" width="300" height="240" frameborder="0" style="border:0" allowfullscreen></iframe>
-            </div>
+        	
+                    <div id="footermap">
+                	<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3505.092638924225!2d77.2687097!3d28.5369351!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce1584e462f17%3A0xb6f81c809b350f96!2sBallistic+Learning+Private+Limited!5e0!3m2!1sen!2sin!4v1464680932218" 
+                            class="googlemap" width="300" height="240" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+           
         </div>
           
         <div class="span2">

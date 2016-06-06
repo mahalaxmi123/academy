@@ -67,13 +67,19 @@ body.pagelayout-frontpage .navbar:hover {
     color: #46a8bf;
 }
 
-.navbar .brand { 
+.pagelayout-frontpage .navbar .brand { 
 	margin: 10px 10px 0px 0px;
+}
+
+.navbar .brand {
+    margin-top: 20px;
 }
 
 .navbar .nav>li>a {
     float: none;
 }
+
+
 
 
 .navbar-inner .span3 .usermenu {
@@ -89,12 +95,12 @@ body.pagelayout-frontpage .navbar:hover {
 
 .pagelayout-login #loginbtn {
     background-color: #46a8bf;
-	border:1px solid #64B7CA;
-    font-size: 20px;
-    padding: 10px 20px;
+    border: 1px solid #64B7CA;
+    font-size: 24px;
+    padding: 10px 38px;
     border-radius: 20px;
     font-family: sans-serif;
-	background-image: linear-gradient(to bottom,#46a8bf, #46a8bf);
+    background-image: linear-gradient(to bottom,#46a8bf, #46a8bf);
 }
 
 .notloggedin #signbuttom{
@@ -181,14 +187,15 @@ body.pagelayout-frontpage #page-header .container-fluid{
 	}
 	
 body.pagelayout-frontpage #page-header h1{
-	font-size: 58px;
+    font-size: 58px;
     font-family: cursive;
     padding: 30px;
     color: #fefefe;
+        
 	}
 
 body.pagelayout-frontpage #page-header p{
-	font-size: 26px;
+    font-size: 26px;
     color: #fefefe;
     padding: 10px;
     font-family: Courgette;
@@ -334,17 +341,17 @@ body.pagelayout-frontpage #page-header p{
 
 
 /* Footer Start */
-.footer-main { background-color: #3D3D3D; color: #fff; padding: 26px 0; font-size: 12px; }
-.map-header h1, .footer-nav h1, .contact-info h1,.footer-desc h1{ color:#DAD9D9; padding: 10px; }
-#footer .footer-desc p, #footer .contact-info p { font-size: 14px; color: #dcdcdc; padding: 10px;}
-#footer .footer-nav ul { margin: 0px; }
-#footer .footer-nav ul li { font-size: 14px; list-style: none; padding-left: 10px; }
+.footer-main { background-color: #315A63; color: #fff; padding: 26px 0; font-size: 12px; }
+.footer-nav h1, .contact-info h1,.footer-desc h1{ color:#5F9DAB; font-weight: normal; padding-left:10px;}
+#footer .footer-desc p, #footer .contact-info p { font-size: 16px; color: #9CCAD5; padding: 10px;}
+
+#footer .footer-nav ul li { font-size: 14px; list-style: none; padding: 2px;}
 .footerlinks a { margin-right: 10px; }
-#footer a { color: #dcdcdc; }
-#footer a:hover { text-decoration: none; color: #c52c2e; }
+#footer a { color: #9CCAD5 }
+#footer a:hover { text-decoration: none; color: #C1D7DC; }
 #footer .row-fluid [class*="span"] { min-height: auto; }
-#footer .footer-foot p { margin: 0; font-size: 16px; color: #dcdcdc;}
-.footer-foot { background-color:#2b2b2b; padding: 10px; text-align: center;
+#footer .footer-foot p { margin: 0; font-size: 16px; color: #9CCAD5;}
+.footer-foot { background-color:#477A86; padding: 10px; text-align: center;
 }
 #page-footer { border: none; padding: 0; margin: 0; }
 #page-footer .validators, #page-footer .purgecaches, #page-footer .performanceinfo { margin-bottom: 65px; }
@@ -375,11 +382,11 @@ input[type="radio"]+label, input[type="checkbox"]+label ,.loginpanel .forgetpass
     background-position: center center;
 }
   
-   .loginbox .loginform .form-label { float: left; text-align: right; width: 32%; white-space: nowrap; }
-   .loginbox .loginform .form-label label { font-size: 18px; color: #fff; }
+   .loginbox .loginform .form-label { float: left; text-align: left; width: 32%; white-space: nowrap; }
+   .loginbox .loginform .form-label label { font-size: 20px; color: #fff; }
    .loginbox .loginform .form-input { float: left; }
-   .pagelayout-login .loginbox .loginform .form-input input, .loginbox .loginform .form-input input {  width:14em; margin-left: 10px; background-color: transparent;
-    border-radius: 16px; .loginbox , text-align:center; }
+   .pagelayout-login .loginbox .loginform .form-input input, .loginbox .loginform .form-input input {  width:17em; background-color: transparent;
+    border-radius: 16px; text-align:center; }
 	.pagelayout-login  input[type="text"] ,input[type="password"] { color:#fefefe; text-align:center;}
    .loginbox .loginform { text-align: left; }
    .clearer{ height: 20px; }

@@ -8,7 +8,9 @@
 @import url(https://fonts.googleapis.com/css?family=Courgette|Playball|Signika|PT+Sans+Narrow|Oleo+Script);
 
 body {
+	color: #727272;
     padding-top: 0px;
+	font-family:"Helvetica Neue",Helvetica,Arial,sans-serif,ourgette, Playball, Signika;
 }
 
 .container-fluid {
@@ -20,7 +22,7 @@ div.logo {
     background: url([[setting:logo]]) no-repeat 0 0;
     display: inline;
     float: left;
-    height: 50px;
+    height:60px;
     margin: 10px;
     padding: 0;
     width: 16%;
@@ -342,8 +344,8 @@ body.pagelayout-frontpage #page-header p{
 
 /* Footer Start */
 .footer-main { background-color: #315A63; color: #fff; padding: 26px 0; font-size: 12px; }
-.footer-nav h1, .contact-info h1,.footer-desc h1{ color:#5F9DAB; font-weight: normal; padding-left:10px;}
-#footer .footer-desc p, #footer .contact-info p { font-size: 16px; color: #9CCAD5; padding: 10px;}
+.footer-nav h1, .contact-info h1,.footer-desc h1{ color:#5F9DAB; font-weight: normal; padding-left:10px; font-size: 28px;}
+#footer .footer-desc p, #footer .contact-info p { font-size: 16px; color: #9CCAD5; margin-left: 10px;}
 
 #footer .footer-nav ul li { font-size: 14px; list-style: none; padding: 2px;}
 .footerlinks a { margin-right: 10px; }
@@ -356,6 +358,10 @@ body.pagelayout-frontpage #page-header p{
 #page-footer { border: none; padding: 0; margin: 0; }
 #page-footer .validators, #page-footer .purgecaches, #page-footer .performanceinfo { margin-bottom: 65px; }
 #page-footer .purgecaches { margin-bottom: 0px; }
+
+.footer-nav h1{ margin-left: 20px;}
+.footer-main .footer-nav ul {margin: 0 0 10px 30px;}
+#footer .contact-info p { line-height: 1.5;}
 
 /* End */
 
@@ -533,13 +539,56 @@ input[type="text"] {
 /* end */
 
 /* Course Box */
-.courses .course-box { border: 1px solid #EFEFEF; margin-bottom: 30px; min-height: 370px; background-color: #fff;
-    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1); }
+.courses .course-box { border: 1px solid #EFEFEF; margin-bottom: 30px; min-height: 370px; background-color: #e8e8e8;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);; }
 .used-region-side-pre .courses .course-box { min-height: 390px; }
 .courses .course-box .courseimage { border-bottom: 1px solid #EFEFEF; text-align: center; min-height: 180px; }
 .courses .course-box .courseimage img { width: 100%; min-height: 180px; max-height: 180px; }
-.courses .course-box .content { margin: 15px 10px 10px 10px; }
+.courses .course-box .content {     margin: 0px 10px 0px 10px; }
 .courses .course-box .info h4 { margin-top: 0; }
+.courses .course-box .info h3 { 
+	margin: 0px -10px;
+
+    font-weight: normal;
+    border-bottom: 2px solid #378fa4;
+    text-decoration: none;
+    font-family: sans-serif;
+    padding: 4px 16px;
+}
+
+.courses .course-box .summary-box p {
+	    margin: 10px 0 10px;
+	}
+	
+	
+	
+#site-news-forum h2, #frontpage-course-list h2, #frontpage-category-names h2, #frontpage-category-combo h2 { 
+	margin-bottom: 30px;
+    background-color: #378fa4;
+    color: #fff;
+    padding-left: 20px;
+    font-weight: normal;
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+input[type="submit"], button:first-child, input.form-submit:first-child, input[type="button"]:first-child, input[type="submit"]:first-child, input[type="reset"]:first-child { 
+ 	background-color: #46a8bf;
+    color: #fff;
+    texbackground-color: #378fa4;
+    color: #fff;
+    text-shadow: none;
+    text-transform: uppercase;
+    border-radius: 0;
+    background-image: linear-gradient(to bottom, #378fa4, #378fa4);
+    border-radius: 20px;
+ }
+ 
+ button:hover, input.form-submit:hover, input[type="button"]:hover, input[type="submit"]:hover, input[type="reset"]:hover, button:focus, input.form-submit:focus, input[type="button"]:focus, input[type="submit"]:focus, input[type="reset"]:focus, button:active, input.form-submit:active, input[type="button"]:active, input[type="submit"]:active, input[type="reset"]:active, button.active, input.form-submit.active, input[type="button"].active, input[type="submit"].active, input[type="reset"].active, button.disabled, input.form-submit.disabled, input[type="button"].disabled, input[type="submit"].disabled, input[type="reset"].disabled, button[disabled], input.form-submit[disabled], input[type="button"][disabled], input[type="submit"][disabled], input[type="reset"][disabled] {
+	 background-color: #46a8bf;
+	 background-image: linear-gradient(to bottom, #46a8bf, #46a8bf);
+	 color: #fff;
+}
+ 
 /* End */
 /*
  Custom CSS Settings

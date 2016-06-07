@@ -151,7 +151,6 @@ body.pagelayout-frontpage .navbar:hover {
 }
 
 .moodle-actionmenu[data-enhanced].show .menu {
-   background-color: transparent;
    -webkit-box-shadow: none;
    box-shadow:none;
 }
@@ -545,6 +544,11 @@ input[type="text"] {
 .courses .course-box .courseimage { border-bottom: 1px solid #EFEFEF; text-align: center; min-height: 180px; }
 .courses .course-box .courseimage img { width: 100%; min-height: 180px; max-height: 180px; }
 .courses .course-box .content {     margin: 0px 10px 0px 10px; }
+.courses .course-box .content ul { 
+	list-style: none;
+    margin: 20px 0 10px 0px;
+    padding: 0px;
+	}
 .courses .course-box .info h4 { margin-top: 0; }
 .courses .course-box .info h3 { 
 	margin: 0px -10px;
@@ -556,8 +560,10 @@ input[type="text"] {
     padding: 4px 16px;
 }
 
-.courses .course-box .summary-box p {
-	    margin: 10px 0 10px;
+.courses .course-box .summary-box  {
+	    margin: 0px 0 10px;
+		    padding: 10px;
+			margin-top: 20px;
 	}
 	
 	

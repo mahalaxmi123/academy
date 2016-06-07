@@ -324,8 +324,8 @@ class theme_blacademy_core_course_renderer extends core_course_renderer {
         if ($course->has_summary()) {
             $summurytext = $course->summary;
             
-            if (strlen($summurytext) >= 110) {
-                $content .= html_writer::tag('div', substr($summurytext, 0, 110).'...', array('class'=>'summary-box'));
+            if (strlen($summurytext) >= 144) {
+                $content .= html_writer::tag('div', substr($summurytext, 0, 144).'...', array('class'=>'summary-box'));
             } else {
                 $content .= html_writer::tag('div', $summurytext, array('class'=>'summary-box'));
             }

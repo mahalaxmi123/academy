@@ -8,7 +8,7 @@
 @import url(https://fonts.googleapis.com/css?family=Courgette|Playball|Signika|PT+Sans+Narrow|Oleo+Script);
 
 body {
-	color: #727272;
+	color:     color: #4e927a;;
     padding-top: 0px;
 	font-family:"Helvetica Neue",Helvetica,Arial,sans-serif,ourgette, Playball, Signika;
 }
@@ -177,7 +177,7 @@ body.pagelayout-frontpage #page-header {
   background-repeat: no-repeat;
   background-color: #ccc;
   background-size: 100%;
-  min-height: 700px;
+  min-height: 690px;
   padding-top: 60px;
 }
 
@@ -211,9 +211,10 @@ body.pagelayout-frontpage #page-header p{
 
 #Infoblock .span9 h2{
     padding:20px;
-    font-size: 48px;
+    font-size: 46px;
     color: #fefefe;
     font-family: sans-serif;
+	font-weight: normal;
 }
 
 
@@ -221,8 +222,8 @@ body.pagelayout-frontpage #page-header p{
     margin-bottom: 20px;
     padding:10px;
     color: #fefefe;
-    font-size: 20px;
-    font-family: serif;
+    font-size: 18px;
+    font-family: sans-serif;
 
 }
 
@@ -276,24 +277,25 @@ body.pagelayout-frontpage #page-header p{
 
  .marketingbox .marketing-innerbox .span3 p {
     color: #e2f7ef;
-    font-family: serif;
+    font-family: sans-serif;
     font-size: 16px;
     line-height: normal;
 }
 
  .marketingbox .marketing-innerbox .span3 button {
-    padding: 14px 43px;
+    padding: 8px 36px;
     background-color: #4E927A;
     background-image: linear-gradient(to bottom, #4E927A, #4E927A);
     border: 1px solid #97beb0;
     border-radius: 50px;
-    font-size: 28px;
+    font-size: 18px;
     text-shadow: none;
     color: #d2f5fd;
     font-weight: 100;
     font-family: sans-serif;
     margin-top: 30px;
 }
+
 
 #page-wrapper{
     background-color: #e8e8e8;
@@ -305,8 +307,6 @@ body.pagelayout-frontpage #page-header p{
 
 .block{
     background-color: #EEEEEE;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
     padding: 0px;
     border: 1px solid #529eaf;
 }
@@ -323,8 +323,6 @@ body.pagelayout-frontpage #page-header p{
     font-size: 18px;
     margin: 0;
     background-color: #378fa4;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
 }
 
 .block .content { padding: 16px 14px;}
@@ -343,15 +341,19 @@ body.pagelayout-frontpage #page-header p{
 
 /* Footer Start */
 .footer-main { background-color: #315A63; color: #fff; padding: 26px 0; font-size: 12px; }
-.footer-nav h1, .contact-info h1,.footer-desc h1{ color:#5F9DAB; font-weight: normal; padding-left:10px; font-size: 28px;}
-#footer .footer-desc p, #footer .contact-info p { font-size: 16px; color: #9CCAD5; margin-left: 10px;}
+.footer-nav h1, .contact-info h1,.footer-desc h1{color: #fff;
+    font-weight: normal;
+    padding-left: 10px;
+    font-size: 22px;
+    text-transform: uppercase;}
+#footer .footer-desc p, #footer .contact-info p { font-size: 16px; margin-left: 10px;}
 
 #footer .footer-nav ul li { font-size: 14px; list-style: none; padding: 2px;}
 .footerlinks a { margin-right: 10px; }
-#footer a { color: #9CCAD5 }
+#footer a, #footer .footer-desc p, #footer .contact-info p, #footer .footer-foot p {color: #e2f7ef; }
 #footer a:hover { text-decoration: none; color: #C1D7DC; }
 #footer .row-fluid [class*="span"] { min-height: auto; }
-#footer .footer-foot p { margin: 0; font-size: 16px; color: #9CCAD5;}
+#footer .footer-foot p { margin: 0; font-size: 16px;}
 .footer-foot { background-color:#477A86; padding: 10px; text-align: center;
 }
 #page-footer { border: none; padding: 0; margin: 0; }
@@ -578,14 +580,14 @@ input[type="text"] {
 }
 
 input[type="submit"], button:first-child, input.form-submit:first-child, input[type="button"]:first-child, input[type="submit"]:first-child, input[type="reset"]:first-child { 
- 	background-color: #46a8bf;
+ 	background-color: #4e927a;
     color: #fff;
     texbackground-color: #378fa4;
     color: #fff;
     text-shadow: none;
     text-transform: uppercase;
     border-radius: 0;
-    background-image: linear-gradient(to bottom, #378fa4, #378fa4);
+    background-image: none;
     border-radius: 20px;
  }
  

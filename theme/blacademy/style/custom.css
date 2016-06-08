@@ -8,7 +8,8 @@
 @import url(https://fonts.googleapis.com/css?family=Courgette|Playball|Signika|PT+Sans+Narrow|Oleo+Script);
 
 body {
-	color:     color: #4e927a;;
+	background-color: #e8e8e8;
+	color: #4e927a;;
     padding-top: 0px;
 	font-family:"Helvetica Neue",Helvetica,Arial,sans-serif,ourgette, Playball, Signika;
 }
@@ -296,11 +297,6 @@ body.pagelayout-frontpage #page-header p{
     margin-top: 30px;
 }
 
-
-#page-wrapper{
-    background-color: #e8e8e8;
-}
-
 #page-content {
     margin-top: 30px;
 }
@@ -344,7 +340,7 @@ body.pagelayout-frontpage #page-header p{
 .footer-nav h1, .contact-info h1,.footer-desc h1{color: #fff;
     font-weight: normal;
     padding-left: 10px;
-    font-size: 22px;
+    font-size: 20px;
     text-transform: uppercase;}
 #footer .footer-desc p, #footer .contact-info p { font-size: 16px; margin-left: 10px;}
 
@@ -596,6 +592,10 @@ input[type="submit"], button:first-child, input.form-submit:first-child, input[t
 	 background-image: linear-gradient(to bottom, #46a8bf, #46a8bf);
 	 color: #fff;
 }
+
+.pagelayout-course .course-content ul li.section.main{ background-color: #fff;}
+.course-content ul li.section.main { margin-top: 10px;}
+.course_category_tree .category>.info>.categoryname  { font-weight:normal;}
  
 /* End */
 /*

@@ -109,7 +109,7 @@ echo $OUTPUT->doctype() ?>
                 <label class="hidden" for="search-1" style="display: none;">Search iCity</label>
                 <div class="search-box grey-box bg-white clear-fix">
                     <input placeholder="<?php echo get_string("searchcourses")?>" accesskey="6" class="search_tour bg-white no-border left search-box__input ui-autocomplete-input" type="text" name="search" id="search-1" autocomplete="off">
-                    <button type="submit" class="no-border bg-white pas search-box__button"><abbr class="fa fa-search"></abbr></button>
+                    <button type="submit" class="no-border bg-white pas search-box__button"><i class="fa fa-search"></i></button>
                 </div>
             </form>
         </div>

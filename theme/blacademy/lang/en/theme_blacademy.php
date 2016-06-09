@@ -45,6 +45,7 @@ $string['pluginname'] = 'Blacademy';
 
 $string['region-side-post'] = 'Right';
 $string['region-side-pre'] = 'Left';
+$string['footeremail'] = 'E-mail:';
 
 
 /* General Setting */
@@ -164,6 +165,7 @@ $string['defaultaddress'] = '308 Negra Narrow Lane, Albeeze, New york, 87104';
 
 $string['emailid'] = 'Email';
 $string['defaultemailid'] = 'info@example.com';
+
 $string['phoneno'] = 'Phone No';
 $string['defaultphoneno'] = '(000) 123-456';
 

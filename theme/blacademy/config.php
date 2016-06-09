@@ -158,5 +158,5 @@ $THEME->layouts = array(
 
 $THEME->javascripts = array( ); 
 $THEME->javascripts_footer = array(
-    'jquery.placeholder.1.3.min', 'custom', 'font-awesome'
+    'jquery.placeholder.1.3.min', 'custom', ''
 );

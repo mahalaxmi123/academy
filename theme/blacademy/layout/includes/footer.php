@@ -78,10 +78,20 @@ $footerbtitle = theme_blacademy_get_setting('footerbtitle', 'format_text');
         <div class="span3">
             <div class="contact-info">
                  <h1><?php echo $footer3header; ?></h1> 
-                <p><?php echo $address; ?><br>
-                <i class="fa fa-phone-square"></i>Phone: <?php echo $phoneno; ?><br>
-                <i class="fa fa-envelope"></i>E-mail: <a class="mail-link" href="mailto:<?php echo $emailid; ?>"><?php echo $emailid; ?></a>
-                </p>
+                <p><?php echo $address; ?></p><br>
+                                        <?php if(!empty($phoneno)): ?>
+                        <p><i class="fa fa-phone-square"></i>Phone: <?php echo $phoneno; ?></p>
+<?php
+endif;
+?>
+   
+            <?php if(!empty($emailid)): ?>
+                 <p><i class="fa fa-envelope-o"></i>
+                <?php echo get_string('footeremail','theme_blacademy'); ?> <a class="mail-link" href="mailto:<?php echo $emailid; ?>"><?php echo $emailid; ?></a>
+             </p>
+<?php
+endif;
+?>
             </div> 
         </div>
       </div>
@@ -99,4 +109,3 @@ $footerbtitle = theme_blacademy_get_setting('footerbtitle', 'format_text');
  <?php  echo $OUTPUT->standard_end_of_body_html() ?>
 </footer>
 <!--E.O.Footer-->
-

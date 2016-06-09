@@ -1,102 +1,16 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
-
-<svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="16px"
-   height="16px"
-   id="svg8515"
-   version="1.1"
-   inkscape:version="0.47 r22583"
-   sodipodi:docname="dockclose.svg"
-   inkscape:export-filename="/home/ajay/Desktop/ 339999/pix_core/t/dock_to_block.png"
-   inkscape:export-xdpi="90"
-   inkscape:export-ydpi="90">
-  <defs
-     id="defs8517">
-    <inkscape:perspective
-       sodipodi:type="inkscape:persp3d"
-       inkscape:vp_x="0 : 8 : 1"
-       inkscape:vp_y="0 : 1000 : 0"
-       inkscape:vp_z="16 : 8 : 1"
-       inkscape:persp3d-origin="8 : 5.3333333 : 1"
-       id="perspective11" />
-    <inkscape:perspective
-       id="perspective2823"
-       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
-       inkscape:vp_z="1 : 0.5 : 1"
-       inkscape:vp_y="0 : 1000 : 0"
-       inkscape:vp_x="0 : 0.5 : 1"
-       sodipodi:type="inkscape:persp3d" />
-  </defs>
-  <sodipodi:namedview
-     id="base"
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1.0"
-     inkscape:pageopacity="0.0"
-     inkscape:pageshadow="2"
-     inkscape:zoom="52.3125"
-     inkscape:cx="1.0227002"
-     inkscape:cy="7.8853046"
-     inkscape:current-layer="layer1"
-     showgrid="true"
-     inkscape:grid-bbox="true"
-     inkscape:document-units="px"
-     inkscape:snap-global="false"
-     inkscape:window-width="2048"
-     inkscape:window-height="1076"
-     inkscape:window-x="0"
-     inkscape:window-y="25"
-     inkscape:window-maximized="1">
-    <inkscape:grid
-       type="xygrid"
-       id="grid8532" />
-  </sodipodi:namedview>
-  <metadata
-     id="metadata8520">
-    <rdf:RDF>
-      <cc:Work
-         rdf:about="">
-        <dc:format>image/svg+xml</dc:format>
-        <dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
-      </cc:Work>
-    </rdf:RDF>
-  </metadata>
-  <g
-     id="layer1"
-     inkscape:label="Layer 1"
-     inkscape:groupmode="layer">
-    <rect
-       style="fill:none;stroke:#333333;stroke-width:1.60000001999999997;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-       id="rect3754"
-       width="12.383077"
-       height="12.40649"
-       x="1.8066899"
-       y="1.8066894" />
-    <rect
-       style="fill:#333333;fill-opacity:1;fill-rule:evenodd;stroke:#5fffff;stroke-width:0;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-       id="rect3588"
-       width="9.2780933"
-       height="1.8978077"
-       x="-4.5180359"
-       y="10.373667"
-       transform="matrix(0.70541152,-0.70879799,0.70134627,0.71282074,0,0)" />
-    <rect
-       y="-0.93171215"
-       x="-15.917809"
-       height="1.8663746"
-       width="9.2721167"
-       id="rect3590"
-       style="fill:#333333;fill-opacity:1;fill-rule:evenodd;stroke:#5fffff;stroke-width:0;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-       transform="matrix(-0.70254073,-0.71164353,0.70432211,-0.70988053,0,0)" />
-  </g>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 15.1.0, SVG Export Plug-In  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
+	<!ENTITY ns_flows "http://ns.adobe.com/Flows/1.0/">
+]>
+<svg version="1.1"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+	 x="0px" y="0px" width="12px" height="12px" viewBox="0 0 12 12" style="overflow:visible;enable-background:new 0 0 12 12;"
+	 xml:space="preserve" preserveAspectRatio="xMinYMid meet">
+<defs>
+</defs>
+<path style="fill:#999999;" d="M11,0H1C0.5,0,0,0.5,0,1v10c0,0.5,0.5,1,1,1h10c0.5,0,1-0.5,1-1V1C12,0.5,11.5,0,11,0z M11,10
+	c0,0.5-0.5,1-1,1H2c-0.5,0-1-0.5-1-1V4c0-0.5,0.5-1,1-1h8c0.5,0,1,0.5,1,1V10z M8.8,8.4C9,8.6,9,8.9,8.8,9.1L8.1,9.8
+	C7.9,10,7.6,10,7.4,9.8L6,8.4L4.6,9.8C4.4,10,4.1,10,3.9,9.8L3.2,9.1C3,8.9,3,8.6,3.2,8.4L4.6,7L3.2,5.5C3,5.3,3,5,3.2,4.8l0.7-0.7
+	c0.2-0.2,0.5-0.2,0.7,0L6,5.6l1.4-1.4C7.6,4,8,4,8.1,4.1l0.7,0.7C9,5,9,5.4,8.9,5.6L7.4,7L8.8,8.4z"/>
 </svg>

@@ -4,16 +4,14 @@
 }
 @media (max-width: 1199px) {
 }
+
 @media (max-width: 1024px) {
     #login-box { background-size: inherit; }
     #login-box #page-login-forgot_password #footer { position: relative; width: inherit; }
-	body.pagelayout-frontpage #page-header { min-height: 500px;}
-	#footer .footer-main #footermap .googlemap { width: 100%;
-    height: 100%;
-    margin-top: 20px;
+    .pagelayout-frontpage #page-header { min-height:0px;}
+	
 	}
-
-}
+	
 @media (max-width: 979px) {
     body { padding-top: 0; }
     .slider-text-wrap { top: 30%; }
@@ -86,5 +84,9 @@
     .footerlinks-box, .copyright-box { text-align: center; }
     .footerlinks-box { margin-top: 15px; }
     .carousel-inner > .item { max-height:280px; min-height: 280px; }
+	#footermap .googlemap {
+    width: 50%;
+    height: 200px;
+	padding-left: 50px;}
 }
 

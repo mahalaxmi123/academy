@@ -5,16 +5,18 @@
 /* FONT PATH
  * -------------------------- */
 
-@font-face {  where FontName and fontname represents the name of the font you want to add
-     font-family: 'FontAwesome';
-     src: url([[font:theme|fontawesome-webfont.eot]);
-     src: url([[font:theme|fontawesome-webfont.eot]]) format('embedded-opentype'),
-          url([[font:theme|fontawesome-webfont.woff]]) format('woff'),
-          url([[font:theme|fontawesome-webfont.ttf]]) format('truetype'),
-          url([[font:theme|fontawesome-webfont.svg]]) format('svg');
-     font-weight: normal;
-     font-style: normal;
+
+@font-face{
+	font-family:FontAwesome;
+	src:url([[font:theme|fontawesome-webfont.eot]]);
+	src:url([[font:theme|fontawesome-webfont.eot]]) format('embedded-opentype'),
+	url([[font:theme|fontawesome-webfont.woff2]]) format('woff2'),
+	url([[font:theme|fontawesome-webfont.woff]]) format('woff'),
+	url([[font:theme|fontawesome-webfont.ttf]]) format('truetype'),
+	url([[font:theme|fontawesome-webfont.svg]]) format('svg');
+	font-weight:400;font-style:normal
 }
+
 
 .navbar-inner .nav .brand:before {
     font-family: FontAwesome;
@@ -24,7 +26,11 @@
     content: "\f015"
 }
 
-
+.btn-info fa-play-circle, a.btn-info .fa-play-circle {
+    margin-left: 10px;
+    margin-right: 0;
+	font-size:20px;
+}
 
 
 .fa {
@@ -198,10 +204,6 @@
   content: "\f000";
 }
 
-.fa-play-circle:before {
-    content: "\f144";
-}
-
 .fa-music:before {
   content: "\f001";
 }
@@ -209,7 +211,11 @@
   content: "\f002";
 }
 
-fa-envelope-o:before {
+.fa-play-circle:before {
+    content: "\f144";
+}
+
+.fa-envelope-o:before {
   content: "\f003";
 }
 .fa-heart:before {

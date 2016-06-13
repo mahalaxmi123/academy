@@ -54,7 +54,7 @@ $footerbtitle = theme_blacademy_get_setting('footerbtitle', 'format_text');
         	
                     <div id="footermap">
                 	<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3505.092638924225!2d77.2687097!3d28.5369351!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce1584e462f17%3A0xb6f81c809b350f96!2sBallistic+Learning+Private+Limited!5e0!3m2!1sen!2sin!4v1464680932218" 
-                            class="googlemap" width="300" height="240" frameborder="0" style="border:0" allowfullscreen></iframe>
+                            class="googlemap" width="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
                     </div>
            
         </div>
@@ -78,20 +78,10 @@ $footerbtitle = theme_blacademy_get_setting('footerbtitle', 'format_text');
         <div class="span3">
             <div class="contact-info">
                  <h1><?php echo $footer3header; ?></h1> 
-                <p><?php echo $address; ?></p><br>
-                                        <?php if(!empty($phoneno)): ?>
-                        <p><i class="fa fa-phone-square"></i>Phone: <?php echo $phoneno; ?></p>
-<?php
-endif;
-?>
-   
-            <?php if(!empty($emailid)): ?>
-                 <p><i class="fa fa-envelope-o"></i>
-                <?php echo get_string('footeremail','theme_blacademy'); ?> <a class="mail-link" href="mailto:<?php echo $emailid; ?>"><?php echo $emailid; ?></a>
-             </p>
-<?php
-endif;
-?>
+                <p><?php echo $address; ?><br>
+                <i class="fa fa-phone"></i>Phone: <?php echo $phoneno; ?><br>
+                <i class="fa fa-envelope-o"></i>E-mail: <a class="mail-link" href="mailto:<?php echo $emailid; ?>"><?php echo $emailid; ?></a>
+                </p>
             </div> 
         </div>
       </div>

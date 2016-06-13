@@ -164,9 +164,9 @@ echo $OUTPUT->doctype() ?>
                                <?php 
                                }
                                ?>
+                 
 
-
-                            <div class="infocontent"<?php if ($Infoblockcontent) { ?>
+                            <div class="infocontent"><?php if ($Infoblockcontent) { ?>
                             <p><?php echo $Infoblockcontent?></p>
                                 <?php 
                                 } else {
@@ -175,24 +175,21 @@ echo $OUTPUT->doctype() ?>
                                 }
                                 ?>
 
-                              </div> 
+                             </div> 
                         </div>
-                </div>
-                
-                
-                <div class="span3"> 
-              
-                        <a class="btn btn-info" href="#">Explore<i class="fa fa-play-circle"></i></a>
-                </div>
+
+                        <div class="span3">
+                            <a class="btn btn-info" href="<?php echo $CFG->wwwroot;?>"><span class = "title">Explore</span><i class="fa fa-play-circle"></i></a>  
+                        </div>   
+                 </div> 
             </div>
         </div>
     </div> 
-    
-    
+     
     <!-- Start Marketing Icons -->
         <?php require_once(dirname(__FILE__).'/includes/marketingbox.php'); ?>
     <!-- End -->
-   
+
     
     
     <div id="page-wrapper"> 

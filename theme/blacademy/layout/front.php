@@ -46,7 +46,6 @@ if (right_to_left()) {
 	$sidepre = 'span3 desktop-first-column';
 }
 
-
 if (!empty($PAGE->theme->settings->bannerheading)) {
     $bannerheading = $PAGE->theme->settings->bannerheading;
 } else {
@@ -86,49 +85,51 @@ echo $OUTPUT->doctype() ?>
 <?php echo $OUTPUT->standard_top_of_body_html() ?>
     
     
-<header role="banner" class="navbar<?php echo $html->navbarclass ?> moodle-has-zindex">
-    <nav role="navigation" class="navbar-inner">
+    <header role="banner" class="navbar<?php echo $html->navbarclass ?> moodle-has-zindex"> 
         <div class="container-fluid">
-             <div class="logo img-responsive" src="<?php echo $logourl; ?>" alt="<?php echo $logoalt ?>" /></div>
-              <a class="brand" href="<?php echo $CFG->wwwroot;?>">
-                        <h4><?php echo format_string($SITE->shortname, true, array('context' => context_course::instance(SITEID)));?></h4>               
-                    </a>  
-                      
-            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </a>
-                    
-             <div class="nav-collapse collapse">
-                        <?php echo $OUTPUT->custom_menu(); ?>
-                        <ul class="nav pull-right">
-                            <li><?php echo $OUTPUT->page_heading_menu(); ?></li>
-                            <div class="searchbox">
-            <form action="<?php p($CFG->wwwroot) ?>/course/search.php">
-                <label class="hidden" for="search-1" style="display: none;">Search iCity</label>
-                <div class="search-box grey-box bg-white clear-fix">
-                    <input placeholder="<?php echo get_string("searchcourses")?>" accesskey="6" class="search_tour bg-white no-border left search-box__input ui-autocomplete-input" type="text" name="search" id="search-1" autocomplete="off">
-                    <button type="submit" class="no-border bg-white pas search-box__button"><i class="fa fa-search"></i></button>
+            <nav role="navigation" class="navbar-inner">
+
+                <a class="brand" href="<?php echo $CFG->wwwroot;?>">
+                    <p><img class="logo img-responsive" src="<?php echo $logourl; ?>" alt="<?php echo $logoalt ?>" /></p>
+                                
+                </a>
+
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </a>
+
+                 <div class="nav-collapse collapse">
+                    <?php echo $OUTPUT->custom_menu(); ?>  
                 </div>
-            </form>
+
+                <ul class="nav pull-right">
+                    <li><?php echo $OUTPUT->page_heading_menu(); ?></li>
+                    <div class="searchbox">
+                        <form action="<?php p($CFG->wwwroot) ?>/course/search.php">
+                            <label class="hidden" for="search-1" style="display: none;">Search iCity</label>
+                            <div class="search-box grey-box bg-white clear-fix">
+                                <input placeholder="<?php echo get_string("searchcourses")?>" accesskey="6" class="search_tour bg-white no-border left search-box__input ui-autocomplete-input" type="text" name="search" id="search-1" autocomplete="off">
+                                <button type="submit" class="no-border bg-white pas search-box__button"><i class="fa fa-search"></i></button>
+                            </div>
+                        </form>
+                    </div>
+                </ul>
+
+                <div id ="signbuttom">
+                    <?php
+                            if (!isloggedin()) {
+                                echo '<a href="'.$CFG->wwwroot.'/login/index.php">Sign In</a>';
+                            }
+                            if (isloggedin()) {
+                                echo $OUTPUT->user_menu();
+                            } 
+                    ?>
+                </div>
+            </nav>
         </div>
- 					 </ul>
-            </div>
-            
-            <div id ="signbuttom">
-                <?php
-                        if (!isloggedin()) {
-                            echo '<a href="'.$CFG->wwwroot.'/login/index.php">Sign In</a>';
-                        }
-                        if (isloggedin()) {
-                            echo $OUTPUT->user_menu();
-                        } 
-                ?>
-            </div>
-        </div>
-    </nav>
-</header>
+    </header>
 
     <div id="page-header">
             <div class="container-fluid">

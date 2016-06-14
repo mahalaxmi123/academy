@@ -24,6 +24,19 @@
 
 // Get the HTML for the settings bits.
 $html = theme_blacademy_get_html_for_settings($OUTPUT, $PAGE);
+if (!empty($PAGE->theme->settings->logo)) {
+    $logourl = $PAGE->theme->setting_file_url('logo', 'logo');
+    $logoalt = get_string('logo', 'theme_blacademy', $SITE->fullname);
+} else {
+    $logourl = $OUTPUT->pix_url('logo', 'theme');
+    $logoalt = get_string('moodlelogo', 'theme_blacademy');
+}
+
+if (!empty($PAGE->theme->settings->alttext)) {
+    $logoalt = format_string($PAGE->theme->settings->alttext);
+}
+
+
 
 // Set default (LTR) layout mark-up for a two column page (side-pre-only).
 $regionmain = 'span9 pull-right';
@@ -47,36 +60,32 @@ echo $OUTPUT->doctype() ?>
 
 <?php echo $OUTPUT->standard_top_of_body_html() ?>
 
-<header role="banner" class="navbar<?php echo $html->navbarclass ?> moodle-has-zindex">
-    <nav role="navigation" class="navbar-inner">
+     <header role="banner" class="navbar<?php echo $html->navbarclass ?> moodle-has-zindex"> 
         <div class="container-fluid">
-            <?php echo $html->heading; ?>
-             <a class="brand" href="<?php echo $CFG->wwwroot;?>">
-            
-                <?php echo format_string($SITE->shortname, true, array('context' => context_course::instance(SITEID)));?>              
-              </a>
-                
-            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </a>
-                    
-             <div class="nav-collapse collapse">
-                        <?php echo $OUTPUT->custom_menu(); ?>
-                        <ul class="nav pull-right">
-                            <li><?php echo $OUTPUT->page_heading_menu(); ?></li>
-                        </ul>
-            </div>
-            
-            <?php //echo $OUTPUT->user_menu(); ?>
+            <nav role="navigation" class="navbar-inner">
+
+                <a class="brand" href="<?php echo $CFG->wwwroot;?>">
+                    <p><img class="logo img-responsive" src="<?php echo $logourl; ?>" alt="<?php echo $logoalt ?>" /></p>
+                                
+                </a>
+
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </a>
+
+                 <div class="nav-collapse collapse">
+                    <?php echo $OUTPUT->custom_menu(); ?>  
+                </div>
+
+               <?php // echo $OUTPUT->user_menu(); ?>
+              
+            </nav>
         </div>
-    </nav>
-</header>
-
-
-
-<?php echo $OUTPUT->full_header(); ?>
+    </header>
+    
+<?php //echo $OUTPUT->full_header(); ?>
     
 <div id="page" class="container-fluid">    
     <div id="page-content" class="row-fluid">

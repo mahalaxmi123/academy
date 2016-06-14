@@ -38,20 +38,18 @@ class theme_blacademy_core_renderer extends theme_bootstrapbase_core_renderer {
      * @param int $headinglevel What level the 'h' tag will be.
      * @return string HTML for the header bar.
      */
-    public function context_header($headerinfo = null, $headinglevel = 1) {
-        
-        global $CFG;
-        if ($this->should_render_logo($headinglevel)) {
-            $logolink = html_writer::link($CFG->wwwroot, '&nbsp;');
-            $logoheader = html_writer::start_tag('div', array('class' => 'header-wrapper'));
-            $logoheader .= html_writer::start_tag('div', array('class' => 'container-fluid'));
-            $logoheader .= html_writer::tag('div', $logolink, array('class' => 'logo'));
-            $logoheader .= html_writer::end_tag('div');
-            $logoheader .= html_writer::end_tag('div');
-            return $logoheader;
-        }
-        return parent::context_header($headerinfo, $headinglevel);
+    public function full_header() {
+        $html = html_writer::start_tag('header', array('id' => 'page-header', 'class' => 'clearfix'));
+        $html .= html_writer::start_div('clearfix', array('id' => 'page-navbar'));
+        $html .= html_writer::tag('nav', $this->navbar(), array('class' => 'breadcrumb-nav'));
+        $html .= html_writer::div($this->page_heading_button(), 'breadcrumb-button');
+        $html .= html_writer::end_div();
+	    $html .= $this->context_header();
+        $html .= html_writer::tag('div', $this->course_header(), array('id' => 'course-header'));
+        $html .= html_writer::end_tag('header');
+        return $html;
     }
+    
 
      protected function should_render_logo($headinglevel = 1) {
         global $PAGE;
@@ -72,18 +70,7 @@ class theme_blacademy_core_renderer extends theme_bootstrapbase_core_renderer {
      *
      * @return string HTML to display the main header.
      */
-    public function full_header() {
-        $html = html_writer::start_tag('header', array('id' => 'page-header', 'class' => 'clearfix'));
-       // $html .= $this->context_header();
-        $html .= html_writer::start_div('container-fluid', array('id' => 'page-navbar'));
-        $html .= html_writer::tag('nav', $this->navbar(), array('class' => 'breadcrumb-nav'));
-        $html .= html_writer::div($this->page_heading_button(), 'breadcrumb-button');
-        $html .= html_writer::end_div();
-        $html .= html_writer::tag('div', $this->course_header(), array('id' => 'course-header'));
-        $html .= html_writer::end_tag('header');
-        return $html;
-    }
-    
+   
     public function render_social_network($socialnetwork) {
         if (theme_blacademy_get_setting($socialnetwork)) {
             $icon = $socialnetwork;

@@ -8,7 +8,9 @@
 @media (max-width: 1024px) {
     #login-box { background-size: inherit; }
     #login-box #page-login-forgot_password #footer { position: relative; width: inherit; }
-    .pagelayout-frontpage #page-header { min-height:0px;}
+    .pagelayout-frontpage #page-header { min-height: 525px; height: auto;}
+	.navbar .brand { padding:0px;}
+	.navbar .nav>li  { font-size:14px;}
 	
 	}
 	
@@ -42,8 +44,8 @@
     .marketingbox .marketing-bg-content p {     font-size: 26px; line-height: 1.1;}
     .marketingbox .marketing-innerbox .span3 { margin-bottom: 20px; }
     .courses .course-box .courseimage img { min-height: 200px;}
-   .navbar .btn-navbar {
-    float: left; margin-top: 30px; }
+   .navbar .btn-navbar { float: right; margin-top: 30px; }
+	.navbar .nav.pull-right { float: left; margin-left: 0px;}
     .container-fluid {padding:0px;}
     .searchbox {float: left; margin: 10px;}
     
@@ -55,14 +57,15 @@
     
     #signbuttom ,.notloggedin #signbuttom {
     float: right;
-    margin-top: -60px;}
+   }
      
     #signbuttom .usermenu {margin-top: 0px;}
     
     .navbar .brand { margin: 10px 10px;}
     #Infoblock .span3 .btn-info { margin: 0% 36%; margin-bottom: 10%;}
     #Infoblock .span9 h2 { font-size: 32px; text-align: center;}
-    #Infoblock .span9 .infocontent { font-size: 18px; text-align: center;}
+	#Infoblock .span9 h2 {margin-top: 30px;}
+    #Infoblock .span9 .infocontent { font-size: 14px; text-align: center;}
     #footermap .googlemap { margin: 20px 80px;}
     .footer-nav h1, .contact-info h1,.footer-desc h1 { text-align: center;}
     #footer .footer-nav ul li, #footer .footer-desc p, #footer .contact-info p{ text-align: center;}

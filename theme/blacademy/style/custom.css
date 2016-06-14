@@ -6,12 +6,14 @@
 @import url(https://fonts.googleapis.com/css?family=Courgette|Playball|Signika);
 @import url(https://fonts.googleapis.com/css?family=Courgette|Playball|Signika|PT+Sans+Narrow);
 @import url(https://fonts.googleapis.com/css?family=Courgette|Playball|Signika|PT+Sans+Narrow|Oleo+Script);
+@import url(https://fonts.googleapis.com/css?family=Roboto);
 
 body {
 	background-color: #e8e8e8;
 	color: #8e8b8b;
     padding-top: 0px;
-	font-family:"Helvetica Neue",Helvetica,Arial,sans-serif,ourgette, Playball, Signika;
+	font-family: sans-serif;
+	 font-size: 14px;
 }
 
 .container-fluid {
@@ -20,19 +22,19 @@ body {
 }
 
 div.logo {
-    background: url([[setting:logo]]) no-repeat 0 0;
+  
     display: inline;
     float: left;
     height:60px;
     margin: 10px;
     padding: 0;
-    width: 16%;
+   
 }
 
 .dir-rtl div.logo {
-    background: url([[setting:logo]]) no-repeat 100% 0;
+ 
     display: block;
-    float: right;
+  
 }
 
 .navbar { margin-bottom: 0px; }
@@ -48,6 +50,9 @@ body.pagelayout-frontpage .navbar:hover {
 	background-color: #fefefe;
 	}
 
+body.pagelayout-frontpage .navbar .nav {
+		float:left;
+		}
 	
 .dir-ltr .usermenu{
 	margin-top:20px;
@@ -56,6 +61,7 @@ body.pagelayout-frontpage .navbar:hover {
 	
 .navbar .nav {
   	margin-top: 20px;
+	float: right;
 }
 
 .navbar .nav.pull-right {
@@ -71,11 +77,7 @@ body.pagelayout-frontpage .navbar:hover {
 }
 
 .pagelayout-frontpage .navbar .brand { 
-	margin: 10px 10px 0px 0px;
-}
-
-.navbar .brand {
-    margin-top: 20px;
+	margin:0px 10px 0px 0px;
 }
 
 .navbar .nav>li>a {
@@ -177,8 +179,7 @@ body.pagelayout-frontpage #page-header {
   background-position: left top;
   background-repeat: no-repeat;
   background-color: #ccc;
-  background-size: 100%;
-  min-height: 690px;
+  min-height: 550px;
   padding-top: 60px;
 }
 
@@ -219,13 +220,14 @@ body.pagelayout-frontpage #page-header p{
 }
 
 
-#Infoblock .span9 .infocontent p{
+#Infoblock .span9 .infocontent{
     margin-bottom: 20px;
     padding:10px;
     color: #fefefe;
     font-size: 16px;
-    font-family: sans-serif;
-
+    font-weight: normal;
+    letter-spacing: .5px;
+    word-spacing: 1px;
 }
 
  .pagelayout-frontpage .marketingbox {
@@ -278,9 +280,10 @@ body.pagelayout-frontpage #page-header p{
 
  .marketingbox .marketing-innerbox .span3 p {
     color: #e2f7ef;
-    font-family: sans-serif;
     font-size: 16px;
+    letter-spacing: .5px;
     line-height: normal;
+    word-spacing: 1px;
 }
 
  .marketingbox .marketing-innerbox .span3 button {

@@ -51,27 +51,32 @@ echo $OUTPUT->doctype() ?>
 <body <?php echo $OUTPUT->body_attributes(); ?>>
 
 <?php echo $OUTPUT->standard_top_of_body_html() ?>
-
-<header role="banner" class="navbar<?php echo $html->navbarclass ?> moodle-has-zindex">
-    <nav role="navigation" class="navbar-inner">
+ <header role="banner" class="navbar<?php echo $html->navbarclass ?> moodle-has-zindex"> 
         <div class="container-fluid">
-            <?php echo $html->heading; ?>
-            
-            <div class="nav-collapse collapse">
-                <a class="brand" href="<?php echo $CFG->wwwroot;?>"><?php echo
-                format_string($SITE->shortname, true, array('context' => context_course::instance(SITEID)));
-                ?></a>
-                <?php echo $OUTPUT->custom_menu(); ?>
-                <ul class="nav pull-right">
-                    <li><?php echo $OUTPUT->page_heading_menu(); ?></li>
-                </ul>
-            </div>
-            	  <?php //echo $OUTPUT->user_menu(); ?>
-        </div>
-    </nav>
-</header>
+            <nav role="navigation" class="navbar-inner">
 
-<?php echo $OUTPUT->full_header(); ?>
+                <a class="brand" href="<?php echo $CFG->wwwroot;?>">
+                    <p><img class="logo img-responsive" src="<?php echo $logourl; ?>" alt="<?php echo $logoalt ?>" /></p>
+                                
+                </a>
+
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </a>
+
+                 <div class="nav-collapse collapse">
+                    <?php echo $OUTPUT->custom_menu(); ?>  
+                </div>
+
+               <?php // echo $OUTPUT->user_menu(); ?>
+              
+            </nav>
+        </div>
+    </header>
+
+<?php //echo $OUTPUT->full_header(); ?>
     
 <div id="page" class="container-fluid">    
     <div id="page-content" class="row-fluid">

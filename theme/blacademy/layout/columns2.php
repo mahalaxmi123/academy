@@ -85,7 +85,12 @@ echo $OUTPUT->doctype() ?>
         </div>
     </header>
     
-<?php //echo $OUTPUT->full_header(); ?>
+<div id="page-header" class="clearfix">
+            <div id="page-navbar" class="clearfix">
+                <nav class="breadcrumb-nav"><?php echo $OUTPUT->navbar(); ?></nav>
+                <div class="breadcrumb-button"><?php echo $OUTPUT->page_heading_button(); ?></div>
+ </div>
+ </div>
     
 <div id="page" class="container-fluid">    
     <div id="page-content" class="row-fluid">

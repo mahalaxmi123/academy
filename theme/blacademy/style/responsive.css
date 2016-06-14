@@ -10,10 +10,13 @@
     #login-box #page-login-forgot_password #footer { position: relative; width: inherit; }
     .pagelayout-frontpage #page-header { min-height: 525px; height: auto;}
 	.navbar .brand { padding:0px;}
-	.navbar .nav>li  { font-size:14px;}
-	
-	}
-	
+	 .navbar .nav>li, .navbar .nav>li>a { font-size:14px !important;}
+    .container-fluid { padding-left:0px; padding-right:0px;}
+	.searchbox .bg-white .search-box__input {width: 100px !important; }
+	.pagelayout-frontpage .navbar .brand {margin: 10px 10px 0px 0px;}
+
+}
+
 @media (max-width: 979px) {
     body { padding-top: 0; }
     .slider-text-wrap { top: 30%; }

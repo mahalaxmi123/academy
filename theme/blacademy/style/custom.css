@@ -10,16 +10,12 @@
 
 body {
 	background-color: #e8e8e8;
-	color: #8e8b8b;
+	color: #7d7a7a;
     padding-top: 0px;
 	font-family: sans-serif;
 	 font-size: 14px;
 }
 
-.container-fluid {
-    padding-right: 60px;
-    padding-left: 60px;
-}
 
 div.logo {
   
@@ -66,11 +62,15 @@ body.pagelayout-frontpage .navbar .nav {
 
 .navbar .nav.pull-right {
 	    float: left;
-		margin-left: 60px;
+		
 	}
+	
+.nav-collapse .nav>li>a:hover, .nav-collapse .nav>li>a:focus, .nav-collapse .dropdown-menu a:hover, .nav-collapse .dropdown-menu a:focus, .nav-collapse .dropdown-submenu a:hover, .nav-collapse .dropdown-submenu a:focus, .nav-collapse .dropdown-submenu a:active, .nav-collapse .dropdown-menu>li>a:hover, .nav-collapse .dropdown-menu>li>a:focus, .nav-collapse .dropdown-submenu:hover>a, .nav-collapse .dropdown-submenu:focus>a { 
+color: #4e927a;
+}
 
 .navbar .brand,.navbar .nav>li,.navbar .nav>li>a {
-    font-size:18px;
+ 
     text-decoration: none;
     text-shadow: none;
     color: #46a8bf;
@@ -338,14 +338,14 @@ body.pagelayout-frontpage #page-header p{
 
 
 /* Footer Start */
-.footer-main { background-color: #315A63; color: #fff; padding: 26px 0; font-size: 12px; }
+.footer-main { background-color: #315A63; color: #fff; padding: 26px 0; }
 .footer-nav h1, .contact-info h1,.footer-desc h1{color: #fff;
     font-weight: normal;
     padding-left: 10px;
     font-size: 20px;
     text-transform: uppercase;}
 	
-#footer .footer-desc p, #footer .contact-info p { font-size: 16px; margin-left: 10px;}
+#footer .footer-desc p, #footer .contact-info p { margin-left: 10px;}
 
 #footer .footer-nav ul li { font-size: 14px; list-style: none; padding: 2px;}
 .footerlinks a { margin-right: 10px; }
@@ -533,8 +533,10 @@ input[type="text"] {
 
 .fa {font-size: 16px; }
 
+
+
 .searchbox .bg-white .search-box__input {
-    width: 160px;
+    width: 100px !important;
 }
 
 /* end */

@@ -9,11 +9,11 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto);
 
 body {
-	background-color: #e8e8e8;
+        background-color: #e8e8e8;
 	color: #7d7a7a;
-    padding-top: 0px;
+        padding-top: 0px;
 	font-family: sans-serif;
-	 font-size: 14px;
+	font-size: 14px;
 }
 
 
@@ -33,18 +33,21 @@ div.logo {
   
 }
 
-.navbar { margin-bottom: 0px; }
+.navbar { margin-bottom: 0px; background-color: #fefefe;}
 
 
  body.pagelayout-frontpage .navbar { 
     position: absolute;
     width: 100%; 
     z-index: 4030;
+    background-color: rgba(0, 0, 0, 0);
 }
 
 body.pagelayout-frontpage .navbar:hover {
 	background-color: #fefefe;
 	}
+        
+body.pagelayout-frontpage .navbar { background-color: none;}
 
 body.pagelayout-frontpage .navbar .nav {
 		float:left;
@@ -74,11 +77,9 @@ color: #4e927a;
     text-decoration: none;
     text-shadow: none;
     color: #46a8bf;
+    font-size: 16px;
 }
 
-.pagelayout-frontpage .navbar .brand { 
-	margin:0px 10px 0px 0px;
-}
 
 .navbar .nav>li>a {
     float: none;
@@ -206,9 +207,18 @@ body.pagelayout-frontpage #page-header p{
     margin: auto;
     line-height: normal;
 	}
-
+       
+#page-header .container-fluid {
+         margin: 20px;   
+        }
+        
+body.pagelayout-frontpage #page-wrapper #page-content {
+         margin-top: 30px;   
+        } 
+        
 #Infoblock {
     background-color: #444444;
+    margin-top: -20px;
 }
 
 #Infoblock .span9 h2{
@@ -216,7 +226,7 @@ body.pagelayout-frontpage #page-header p{
     font-size: 38px;
     color: #fefefe;
     font-family: sans-serif;
-	font-weight: normal;
+    font-weight: normal;
 }
 
 
@@ -300,14 +310,10 @@ body.pagelayout-frontpage #page-header p{
     margin-top: 30px;
 }
 
-#page-content {
-    margin-top: 30px;
-}
-
 .block{
-    background-color: #EEEEEE;
+    background-color:#e8e8e8;
     padding: 0px;
-    border: 1px solid #529eaf;
+    border: 1px solid  #b9c8cc;
 }
 
 .block .header h2 {
@@ -324,7 +330,7 @@ body.pagelayout-frontpage #page-header p{
     background-color: #378fa4;
 }
 
-.block .content { padding: 16px 14px;}
+.block .content { padding: 6px 14px;}
 
 #Infoblock .span3 .btn-info {
 	margin:70px;
@@ -335,6 +341,19 @@ body.pagelayout-frontpage #page-header p{
     font-family: sans-serif;
 	background-image: none;	
 	}
+        
+
+    ul.weeks h3.sectionname {
+            
+    border-bottom: 2px solid #4e927a;
+    font-family: sans-serif;
+    color: #4e927a;
+
+        }
+        
+    .section_action_menu .moodle-actionmenu ul.menubar{ margin-right: 20px; }
+    .course-content ul.weeks li.section .left .section-handle img.icon { margin-left: 20px;}
+    .section-modchooser { padding-bottom: 10px;}
 
 
 /* Footer Start */
@@ -361,7 +380,7 @@ body.pagelayout-frontpage #page-header p{
 
 .footer-nav h1{ margin-left: 20px;}
 .footer-main .footer-nav ul {margin: 0 0 10px 30px;}
-#footer .contact-info p { line-height: 1.5;}
+#footer .contact-info p { line-height: 1.75;}
 #footer .contact-info .fa-phone, #footer .contact-info .fa-envelope-o { margin-right: 10px; }
 
 /* End */
@@ -580,8 +599,11 @@ input[type="text"] {
 	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
 }
 
-input[type="submit"], button:first-child, input.form-submit:first-child, input[type="button"]:first-child, input[type="submit"]:first-child, input[type="reset"]:first-child { 
- 	background-color: #4e927a;
+input[type="submit"], button:first-child, 
+input.form-submit:first-child, input[type="button"]:first-child, 
+input[type="submit"]:first-child, input[type="reset"]:first-child { 
+    background-color: #4e927a;
+    padding: 6px 14px;
     color: #fff;
     texbackground-color: #378fa4;
     color: #fff;

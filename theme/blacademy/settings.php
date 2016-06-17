@@ -45,16 +45,7 @@ $ADMIN->add('themes', new admin_category('theme_blacademy', 'Blacademy'));
     $setting = new admin_setting_configstoredfile($name, $title, $description, 'logo');
     $setting->set_updatedcallback('theme_reset_all_caches');
     $temp->add($setting);
-    
-    // Footnote setting.
-    $name = 'theme_blacademy/footnote';
-    $title = get_string('footnote', 'theme_blacademy');
-    $description = get_string('footnotedesc', 'theme_blacademy');
-    $default = '';
-    $setting = new admin_setting_confightmleditor($name, $title, $description, $default);
-    $setting->set_updatedcallback('theme_reset_all_caches');
-    $temp->add($setting);
-
+   
     // Custom CSS file.
     $name = 'theme_blacademy/customcss';
     $title = get_string('customcss', 'theme_blacademy');

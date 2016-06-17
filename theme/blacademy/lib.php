@@ -50,15 +50,24 @@ function theme_blacademy_process_css($css, $theme) {
     }
     $css = theme_blacademy_set_headerimg($css, $headerimg);
     
-	/*
-    $headerimg = $theme->setting_file_url('headerimg', 'headerimg');
-    if (!isset($headerimg)) {
-        $headerimg = $OUTPUT->pix_url('headerimg', 'theme');
+    // Set the Site color.
+    if (empty($theme->settings->sitecolor)) {
+        $sitecolor = '#3e65a0'; // Default.
+    } else {
+        $sitecolor = $theme->settings->sitecolor;
     }
-
-    $css = theme_blacademy_set_headerimg($css, $headerimg); */
-	
-	// Set the marketingbox background image for the backgroundimg.
+    $css = blacademy_set_sitecolor($css, $sitecolor);
+    
+    // Set the Banner Font Color.
+    if (empty($theme->settings->bannerfontcolor)) {
+        $bannerfontcolor = '#fff'; // Default.
+    } else {
+        $bannerfontcolor = $theme->settings->bannerfontcolor;
+    }
+    $css = blacademy_set_bannerfontcolor($css, $bannerfontcolor);
+    
+   	
+    // Set the marketingbox background image for the backgroundimg.
     $backgroundimg = $theme->setting_file_url('backgroundimg', 'backgroundimg');
     if (!isset($backgroundimg)) {
         $backgroundimg = $OUTPUT->pix_url('backgroundimg', 'theme');
@@ -93,6 +102,19 @@ function theme_blacademy_set_logo($css, $logo) {
 
     return $css;
 }
+
+function blacademy_set_sitecolor($css, $sitecolor) {
+    $tag = '[[setting:sitecolor]]';
+    $css = str_replace($tag, $sitecolor, $css);
+    return $css;
+}
+function blacademy_set_bannerfontcolor($css, $bannerfontcolor) {
+    $tag = '[[setting:bannerfontcolor]]';
+    $css = str_replace($tag, $bannerfontcolor, $css);
+    return $css;
+}
+
+ 
 
 /**
  * Serves any files associated with the theme settings.
@@ -337,3 +359,5 @@ function blacademy_set_customcss() {
 function theme_blacademy_page_init(moodle_page $page) {
     $page->requires->jquery();
 }
+
+

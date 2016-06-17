@@ -24,6 +24,13 @@
 
 // Get the HTML for the settings bits.
 $html = theme_blacademy_get_html_for_settings($OUTPUT, $PAGE);
+if (!empty($PAGE->theme->settings->logo)) {
+    $logourl = $PAGE->theme->setting_file_url('logo', 'logo');
+    $logoalt = get_string('logo', 'theme_blacademy', $SITE->fullname);
+} else {
+    $logourl = $OUTPUT->pix_url('logo', 'theme');
+    $logoalt = get_string('moodlelogo', 'theme_blacademy');
+}
 
 echo $OUTPUT->doctype() ?>
 <html <?php echo $OUTPUT->htmlattributes(); ?>>

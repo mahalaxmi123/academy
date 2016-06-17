@@ -599,6 +599,13 @@ input[type="text"] {
 	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
 }
 
+input.form-submit, input#id_submitbutton, input#id_submitbutton2, 
+.path-admin .buttons input[type="submit"], td.submit input{
+    
+     background-image:none;
+    
+}
+
 input[type="submit"], button:first-child, 
 input.form-submit:first-child, input[type="button"]:first-child, 
 input[type="submit"]:first-child, input[type="reset"]:first-child { 
@@ -612,6 +619,7 @@ input[type="submit"]:first-child, input[type="reset"]:first-child {
     border-radius: 0;
     background-image: none;
     border-radius: 20px;
+ 
  }
  
  button:hover, input.form-submit:hover, input[type="button"]:hover, input[type="submit"]:hover, input[type="reset"]:hover, button:focus, input.form-submit:focus, input[type="button"]:focus, input[type="submit"]:focus, input[type="reset"]:focus, button:active, input.form-submit:active, input[type="button"]:active, input[type="submit"]:active, input[type="reset"]:active, button.active, input.form-submit.active, input[type="button"].active, input[type="submit"].active, input[type="reset"].active, button.disabled, input.form-submit.disabled, input[type="button"].disabled, input[type="submit"].disabled, input[type="reset"].disabled, button[disabled], input.form-submit[disabled], input[type="button"][disabled], input[type="submit"][disabled], input[type="reset"][disabled] {
@@ -620,7 +628,7 @@ input[type="submit"]:first-child, input[type="reset"]:first-child {
 	 color: #fff;
 }
 
-.pagelayout-course .course-content ul li.section.main{ background-color: #fff;}
+.pagelayout-course .course-content ul li.section.main{ background-color: #fefefe;}
 .course-content ul li.section.main { margin-top: 10px;}
 .course_category_tree .category>.info>.categoryname  { font-weight:normal;}
  
@@ -636,3 +644,22 @@ input[type="submit"]:first-child, input[type="reset"]:first-child {
 */
 
 [[setting:customcss]]
+
+.sb-icon-search,.navbar .nav li.dropdown.open > .dropdown-toggle, .navbar .nav li.dropdown.active > .dropdown-toggle, .navbar .nav li.dropdown.open.active > .dropdown-toggle, .navbar .nav > li > a:focus, .navbar .nav > li > a:hover,
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus, .dropdown-submenu:hover > a, .dropdown-submenu:focus > a,
+.mainbox .span3 button,.mainbox .span3 button:hover,.frontpage-course-list-all .coursebox .info h3.coursename,#site-news-forum h2,button, input.form-submit, input[type="button"], input[type="submit"], input[type="reset"],button:hover, input.form-submit:hover, input[type="button"]:hover, input[type="submit"]:hover, input[type="reset"]:hover,.block_calendar_month .calendar-controls .previous,.block_calendar_month .calendar-controls .next,.block .minicalendar td.today, ,.path-calendar .maincalendar .calendar-controls .previous, .path-calendar .maincalendar .calendar-controls .next,.moodle-actionmenu.show[data-enhanced] .menu a:hover,.navbar .btn-navbar,.navbar .btn-navbar:hover, .navbar .btn-navbar:focus, .navbar .btn-navbar:active, .navbar .btn-navbar.active, .navbar .btn-navbar.disabled, .navbar .btn-navbar[disabled],.sb-search.sb-search-open .sb-icon-search, .no-js .sb-search .sb-icon-search,
+input.form-submit:hover, input#id_submitbutton:hover, input#id_submitbutton2:hover, .path-admin .buttons input[type="submit"]:hover, td.submit input:hover, input.form-submit:focus, input#id_submitbutton:focus, input#id_submitbutton2:focus, .path-admin .buttons input[type="submit"]:focus, td.submit input:focus, input.form-submit:active, input#id_submitbutton:active, input#id_submitbutton2:active, .path-admin .buttons input[type="submit"]:active, td.submit input:active, input.form-submit.active, input#id_submitbutton.active, input#id_submitbutton2.active, .path-admin .buttons input.active[type="submit"], td.submit input.active, input.form-submit.disabled, input#id_submitbutton.disabled, input#id_submitbutton2.disabled, .path-admin .buttons input.disabled[type="submit"], td.submit input.disabled, input.form-submit[disabled], input#id_submitbutton[disabled], input#id_submitbutton2[disabled], .path-admin .buttons input[type="submit"][disabled], td.submit input[disabled],input.form-submit, input#id_submitbutton, input#id_submitbutton2, .path-admin .buttons input[type="submit"], td.submit input,.btn-primary,.btn-primary:hover,.jsenabled .usermenu .moodle-actionmenu.show .menu a:hover{
+  background-color: [[setting:sitecolor]];
+}
+a,#dockeditempanel .dockeditempanel_hd h2,
+.forumpost .subject,.forumpost .options,.top-footer .span4 h3,.sitetopic p.blue,.path-calendar .maincalendar .calendar-controls .current,.calendar_event_course, .block .calendar-event-panel .yui3-overlay-content,.block .content h3.eventskey,.usermenu .login a{
+  color: [[setting:sitecolor]];
+}
+
+.navbar-inner{
+  border-color: [[setting:sitecolor]] !important;
+}
+
+body.pagelayout-frontpage #page-header h1 span,
+body.pagelayout-frontpage #page-header h1,
+body.pagelayout-frontpage #page-header p{color:[[setting:bannerfontcolor]];}

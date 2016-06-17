@@ -55,6 +55,15 @@ $ADMIN->add('themes', new admin_category('theme_blacademy', 'Blacademy'));
     $setting->set_updatedcallback('theme_reset_all_caches');
     $temp->add($setting);
     
+     // Site color.
+    $name = 'theme_blacademy/sitecolor';
+    $title = get_string('sitecolor', 'theme_blacademy');
+    $description = get_string('sitecolordesc', 'theme_blacademy');
+    $default = '#0070a8;';
+    $setting = new admin_setting_configcolourpicker($name, $title, $description, $default);
+    $temp->add($setting);
+
+    
     // Invert Navbar to dark background.
     $name = 'theme_blacademy/invert';
     $title = get_string('invert', 'theme_blacademy');
